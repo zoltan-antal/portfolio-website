@@ -1,7 +1,7 @@
 import { createHashRouter } from 'react-router-dom';
 import App from '../App.jsx';
 import Home from '../Home.jsx';
-import Projects from '../Projects.jsx';
+import Portfolio from '../Portfolio.jsx';
 
 const router = createHashRouter([
   {
@@ -10,7 +10,7 @@ const router = createHashRouter([
     element: <App />,
     children: [
       { index: true, element: <Home /> },
-      { path: 'projects', element: <Projects /> },
+      { path: 'projects', element: <Portfolio /> },
     ],
   },
 ]);

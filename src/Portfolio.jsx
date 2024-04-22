@@ -1,4 +1,4 @@
-const Projects = () => {
+const Portfolio = () => {
   const domain =
     process.env.NODE_ENV === 'production'
       ? window.location.hostname
@@ -15,4 +15,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default Portfolio;
