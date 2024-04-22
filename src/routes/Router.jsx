@@ -5,6 +5,7 @@ import Projects from '../Projects.jsx';
 
 const router = createBrowserRouter([
   {
+    basename: '/',
     path: '/',
     element: <App />,
     children: [
