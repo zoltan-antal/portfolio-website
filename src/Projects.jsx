@@ -9,6 +9,8 @@ const Projects = () => {
       <h2>Projects</h2>
       <h3>Algorithm Visualiser</h3>
       <a href={`https://algorithms.${domain}`}>Link</a>
+      <h3>CV Creator</h3>
+      <a href={`https://cv-creator.${domain}`}>Link</a>
     </>
   );
 };
