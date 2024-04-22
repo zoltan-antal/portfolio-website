@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom';
+
 const Home = () => {
   return (
     <>
@@ -19,8 +21,12 @@ const Home = () => {
         constantly seeking to hone my problem-solving skills and exploring new
         concepts.
       </p>
-      <button>Connect with me</button>
-      <button>See my portfolio</button>
+      <Link to="/contact">
+        <button>Contact</button>
+      </Link>
+      <Link to="/portfolio">
+        <button>See my portfolio</button>
+      </Link>
     </>
   );
 };
