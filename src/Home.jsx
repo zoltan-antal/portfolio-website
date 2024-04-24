@@ -4,10 +4,10 @@ const Home = () => {
   return (
     <>
       <p>
-        Hey there! I&apos;m Zoltan, a self-taught software developer
-        specialising in full-stack web development. With a background in
-        Aerospace Engineering I bring a unique blend of analytical thinking and
-        creative problem-solving to every project.
+        Hey there! I&apos;m Zoltan, a full-stack software developer specialising
+        in web development. With a background in Aerospace Engineering I bring a
+        unique blend of analytical thinking and creative problem-solving to
+        every project.
       </p>
       <p>
         My web development toolkit includes React for front-end, ExpressJS for
