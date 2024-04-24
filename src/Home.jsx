@@ -18,7 +18,7 @@ const Home = () => {
       </p>
       <p>
         In my free time, I enjoy tackling coding challenges using Python,
-        constantly seeking to hone my problem-solving skills and exploring new
+        constantly seeking to hone my problem-solving skills and explore new
         concepts.
       </p>
       <Link to="/contact">
