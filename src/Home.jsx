@@ -11,7 +11,7 @@ const Home = () => {
       </p>
       <p>
         My web development toolkit includes React for front-end, ExpressJS for
-        back-end, and MongoDB and PostgreSQL for database management. Whether
+        back-end, and MongoDB & PostgreSQL for database management. Whether
         it&apos;s building engaging user-interfaces or designing scalable
         backend systems, I&apos;m dedicated to delivering high-quality solutions
         that exceed expectations.
