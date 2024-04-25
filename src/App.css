@@ -2,5 +2,52 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 
 * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
   font-family: Onest, Arial, sans-serif;
+}
+
+p,
+pre,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+li,
+a,
+label {
+  color: black;
+}
+
+button {
+  &:hover {
+    cursor: pointer;
+
+    &:disabled {
+      cursor: auto;
+    }
+  }
+}
+
+html {
+  font-size: 16px;
+  height: 100vh;
+  height: 100dvh;
+}
+
+#root {
+  height: 100vh;
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+
+  main {
+    flex-grow: 1;
+  }
 }
