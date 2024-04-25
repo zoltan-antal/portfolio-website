@@ -49,6 +49,41 @@ html {
 
   main {
     flex-grow: 1;
-    padding: 20px;
+    padding: 20px 30px;
+  }
+}
+
+[data-tooltip] {
+  position: relative;
+
+  &::after {
+    background-color: white;
+    color: black;
+    font-size: 0.9rem;
+    padding: 6px 10px;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 6px;
+    position: absolute;
+    text-align: center;
+    text-wrap: nowrap;
+    bottom: 0px;
+    left: 50%;
+    content: attr(data-tooltip);
+    transform: translate(-50%, 110%) scale(0);
+    transform-origin: top;
+    transition: 0.14s;
+    box-shadow: 0 4px 14px 0 rgba(0, 0, 0, .2), 0 0 0 1px rgba(0, 0, 0, .05);
+  }
+
+  &:hover::after {
+    display: block;
+    transform: translate(-50%, 110%) scale(1);
+  }
+
+  @media only screen and (max-width: 768px) {
+    &::after {
+      content: normal;
+    }
   }
 }

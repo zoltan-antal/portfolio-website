@@ -1,7 +1,7 @@
 import './index.css';
 import emailIcon from '../../assets/images/icons/email.svg';
-import linkedinIcon from '../../assets/images/icons/linkedin.svg';
-import githubIcon from '../../assets/images/icons/github.svg';
+import linkedinIcon from '../../assets/images/icons/technologies/linkedin.svg';
+import githubIcon from '../../assets/images/icons/technologies/github.svg';
 
 const Footer = () => {
   return (
