@@ -1,10 +1,10 @@
 import { createHashRouter } from 'react-router-dom';
-import App from '../App.jsx';
-import Home from '../Home.jsx';
-import About from '../About.jsx';
-import Contact from '../Contact.jsx';
-import Projects from '../Projects.jsx';
-import Skills from '../Skills.jsx';
+import App from '../App';
+import Home from '../components/Home';
+import About from '../components/About';
+import Contact from '../components/Contact';
+import Projects from '../components/Projects';
+import Skills from '../components/Skills';
 
 const router = createHashRouter([
   {
