@@ -1,0 +1,29 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+
+  padding: 7px 0 3px;
+
+  div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    font-size: 0.9rem;
+
+    a {
+      text-decoration: underline;
+    }
+
+    img {
+      height: 1.2rem;
+    }
+
+    &#footer-contact {
+      gap: 8px;
+    }
+  }
+}
