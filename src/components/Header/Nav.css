@@ -1,0 +1,10 @@
+nav {
+  ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 20px;
+    list-style-type: none
+  }
+}
