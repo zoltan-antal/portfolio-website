@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 const Home = () => {
   return (
     <>
-      <p>
+      {/* <p>
         Hey there! I&apos;m Zoltan, a full-stack software developer specialising
         in web development. With a background in Aerospace Engineering I bring a
         unique blend of analytical thinking and creative problem-solving to
@@ -20,7 +20,7 @@ const Home = () => {
         In my free time, I enjoy tackling coding challenges using Python,
         constantly seeking to hone my problem-solving skills and explore new
         concepts.
-      </p>
+      </p> */}
       <Link to="/contact">
         <button>Contact</button>
       </Link>
