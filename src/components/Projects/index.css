@@ -200,6 +200,7 @@ main {
       column-gap: 5px;
 
       &:has(+ .content.hidden) {
+        padding-bottom: 10px;
         border-bottom: 1px solid black;
       }
 
