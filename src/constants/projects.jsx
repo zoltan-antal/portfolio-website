@@ -1,5 +1,7 @@
 import algorithmVisualiserScreenshot from '../assets/images/screenshots/algorithm-visualiser.png';
 import cvCreatorScreenshot from '../assets/images/screenshots/cv-creator.png';
+import etchASketchScreenshot from '../assets/images/screenshots/etch-a-sketch.png';
+import calculatorScreenshot from '../assets/images/screenshots/calculator.png';
 
 const domain =
   process.env.NODE_ENV === 'production'
@@ -74,6 +76,52 @@ const projects = [
       'redux',
       'axios',
     ],
+  },
+  {
+    name: 'Etch A Sketch',
+    category: 'learning',
+    wip: false,
+    description: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </>
+    ),
+    url: 'https://zoltan-antal.github.io/etch-a-sketch/',
+    githubUrl: 'https://github.com/zoltan-antal/etch-a-sketch',
+    screenshot: etchASketchScreenshot,
+    desktop: true,
+    mobile: false,
+    darkMode: false,
+    colourblindFriendly: false,
+    technologies: ['javascript'],
+  },
+  {
+    name: 'Calculator',
+    category: 'learning',
+    wip: false,
+    description: (
+      <>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+          aliquip ex ea commodo consequat.
+        </p>
+      </>
+    ),
+    url: 'https://zoltan-antal.github.io/calculator/',
+    githubUrl: 'https://github.com/zoltan-antal/calculator',
+    screenshot: calculatorScreenshot,
+    desktop: true,
+    mobile: false,
+    darkMode: false,
+    colourblindFriendly: false,
+    technologies: ['javascript'],
   },
 ];
 

@@ -1,5 +1,7 @@
 import './index.css';
 
+import { useState } from 'react';
+
 import projects from '../../constants/projects';
 import technologies from '../../constants/technologies';
 
@@ -10,80 +12,120 @@ import mobileIcon from '../../assets/images/icons/mobile.svg';
 import darkModeIcon from '../../assets/images/icons/moon.svg';
 import colourBlindIcon from '../../assets/images/icons/eye.svg';
 import wipIcon from '../../assets/images/icons/wip.svg';
+import expandIcon from '../../assets/images/icons/chevron-down.svg';
+import collapseIcon from '../../assets/images/icons/chevron-up.svg';
 
 const Projects = () => {
+  const [showAllProjects, setShowAllProjects] = useState(false);
+
+  const renderProject = (project) => {
+    return (
+      <div key={project.name} className="project">
+        <img
+          src={project.wip ? wipIcon : project.screenshot}
+          alt={project.wip ? 'work in progress' : 'project screenshot'}
+        />
+        <div className="info">
+          <div className="header">
+            <h3 className="name">{project.name}</h3>
+            <div className="feature-icons">
+              {project.desktop && (
+                <div data-tooltip="Desktop layout">
+                  <img src={desktopIcon} alt="desktop-layout" />
+                </div>
+              )}
+              {project.mobile && (
+                <div data-tooltip="Mobile layout">
+                  <img src={mobileIcon} alt="mobile-layout" />
+                </div>
+              )}
+              {project.darkMode && (
+                <div data-tooltip="Dark mode">
+                  <img src={darkModeIcon} alt="dark-mode" />
+                </div>
+              )}
+              {project.colourblindFriendly && (
+                <div data-tooltip="Colourblind-friendly">
+                  <img src={colourBlindIcon} alt="colourblind-friendly" />
+                </div>
+              )}
+            </div>
+          </div>
+          <div className="technologies">
+            {project.technologies.map((technology) => (
+              <div key={technology}>
+                {technologies[technology].name}{' '}
+                <img
+                  src={technologies[technology].icon}
+                  alt={`${technologies[technology].name} logo`}
+                />
+              </div>
+            ))}
+          </div>
+          <div className="description">{project.description}</div>
+          <div className="links">
+            <a href={project.url} target="_blank" rel="noopener noreferrer">
+              Go to app
+              <img src={linkIcon} alt="open-in-new-tab" />
+            </a>
+            <a
+              href={project.githubUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              See code
+              <img src={githubIcon} alt="github-logo" />
+            </a>
+          </div>
+        </div>
+      </div>
+    );
+  };
+
   return (
     <>
       <h1>My Projects</h1>
-      <h2>Main projects</h2>
-      <div className="projects">
-        {projects
-          .filter((project) => project.category === 'main')
-          .map((project) => (
-            <div key={project.name} className="project">
-              <img
-                src={project.wip ? wipIcon : project.screenshot}
-                alt={project.wip ? 'work in progress' : 'project screenshot'}
-              />
-              <div className="info">
-                <div className="header">
-                  <h3 className="name">{project.name}</h3>
-                  <div className="feature-icons">
-                    {project.desktop && (
-                      <div data-tooltip="Desktop layout">
-                        <img src={desktopIcon} alt="desktop-layout" />
-                      </div>
-                    )}
-                    {project.mobile && (
-                      <div data-tooltip="Mobile layout">
-                        <img src={mobileIcon} alt="mobile-layout" />
-                      </div>
-                    )}
-                    {project.darkMode && (
-                      <div data-tooltip="Dark mode">
-                        <img src={darkModeIcon} alt="dark-mode" />
-                      </div>
-                    )}
-                    {project.colourblindFriendly && (
-                      <div data-tooltip="Colourblind-friendly">
-                        <img src={colourBlindIcon} alt="colourblind-friendly" />
-                      </div>
-                    )}
-                  </div>
-                </div>
-                <div className="technologies">
-                  {project.technologies.map((technology) => (
-                    <div key={technology}>
-                      {technologies[technology].name}{' '}
-                      <img
-                        src={technologies[technology].icon}
-                        alt={`${technologies[technology].name} logo`}
-                      />
-                    </div>
-                  ))}
-                </div>
-                <div className="description">{project.description}</div>
-                <div className="links">
-                  <a
-                    href={project.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    Go to app
-                    <img src={linkIcon} alt="open-in-new-tab" />
-                  </a>
-                  <a
-                    href={project.githubUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    See code
-                    <img src={githubIcon} alt="github-logo" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          ))}
+      <div id="main-projects">
+        <h2>Main projects</h2>
+        <div className="projects">
+          {projects
+            .filter((project) => project.category === 'main')
+            .map((project) => renderProject(project))}
+        </div>
+      </div>
+      <div id="learning-projects" className="collapsible">
+        <div className="header">
+          <h2>Learning projects</h2>
+          <p>
+            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
+            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
+            quae ab illo inventore veritatis et quasi architecto beatae vitae
+            dicta sunt explicabo.
+          </p>
+          <button
+            onClick={(e) => {
+              setShowAllProjects((val) => !val);
+              setTimeout(() => {
+                e.target.scrollIntoView({
+                  behavior: 'smooth',
+                  block: 'start',
+                });
+              }, 25);
+            }}
+          >
+            <img
+              src={showAllProjects ? collapseIcon : expandIcon}
+              alt={showAllProjects ? 'hide' : 'show'}
+            />
+          </button>
+        </div>
+        <div className={`content ${showAllProjects ? 'visible' : 'hidden'}`}>
+          <div className="projects">
+            {projects
+              .filter((project) => project.category === 'learning')
+              .map((project) => renderProject(project))}
+          </div>
+        </div>
       </div>
     </>
   );
