@@ -21,10 +21,13 @@ const Projects = () => {
   const renderProject = (project) => {
     return (
       <div key={project.name} className="project">
-        <img
-          src={project.wip ? wipIcon : project.screenshot}
-          alt={project.wip ? 'work in progress' : 'project screenshot'}
-        />
+        <div className="screenshot">
+          <img
+            src={project.wip ? wipIcon : project.screenshot}
+            alt={project.wip ? 'work in progress' : 'project screenshot'}
+            className={project.wip ? 'wip' : ''}
+          />
+        </div>
         <div className="info">
           <div className="header">
             <h3 className="name">{project.name}</h3>
@@ -62,12 +65,17 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <div className="description">{project.description}</div>
+          <div className="description">
+            {project.wip && <p>WORK IN PROGRESS</p>}
+            {project.description}
+          </div>
           <div className="links">
-            <a href={project.url} target="_blank" rel="noopener noreferrer">
-              Go to app
-              <img src={linkIcon} alt="open-in-new-tab" />
-            </a>
+            {project.url && (
+              <a href={project.url} target="_blank" rel="noopener noreferrer">
+                Go to app
+                <img src={linkIcon} alt="open-in-new-tab" />
+              </a>
+            )}
             <a
               href={project.githubUrl}
               target="_blank"

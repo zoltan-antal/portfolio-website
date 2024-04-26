@@ -42,11 +42,31 @@ main {
         } */
       }
 
-      >img {
+      .screenshot {
         flex-shrink: 0;
 
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
         border: 1px solid black;
-        height: 270px;
+        --screenshot-height: 270px;
+        height: var(--screenshot-height);
+
+        &:has(.wip) {
+          width: calc(var(--screenshot-height) * 1.78);
+          /* width: calc(var(--screenshot-height) * 2.12); */
+        }
+
+        >img {
+          height: 100%;
+          width: auto;
+
+          &.wip {
+            height: 50%;
+          }
+        }
       }
 
       .info {

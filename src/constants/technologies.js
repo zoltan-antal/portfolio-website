@@ -8,7 +8,9 @@ import mongooseIcon from '../assets/images/icons/technologies/mongoose.svg';
 import nodejsIcon from '../assets/images/icons/technologies/nodejs.svg';
 import passportjsIcon from '../assets/images/icons/technologies/passportjs.png';
 import passportjsIconTransparent from '../assets/images/icons/technologies/passportjs-transparent.svg';
+import postgresqlIcon from '../assets/images/icons/technologies/postgresql.svg';
 import reactIcon from '../assets/images/icons/technologies/react.svg';
+import reactrouterIcon from '../assets/images/icons/technologies/reactrouter.svg';
 import reduxIcon from '../assets/images/icons/technologies/redux.svg';
 import typescriptIcon from '../assets/images/icons/technologies/typescript.svg';
 
@@ -53,9 +55,19 @@ const technologies = {
     icon: passportjsIcon,
     iconTransparent: passportjsIconTransparent,
   },
+  postgresql: {
+    name: 'PostgreSQL',
+    icon: postgresqlIcon,
+    iconTransparent: false,
+  },
   react: {
     name: 'React',
     icon: reactIcon,
+    iconTransparent: false,
+  },
+  reactrouter: {
+    name: 'React Router',
+    icon: reactrouterIcon,
     iconTransparent: false,
   },
   redux: {
