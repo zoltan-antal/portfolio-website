@@ -1,0 +1,41 @@
+main.contact {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 30px;
+
+  .contact-category {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 4px;
+
+    .contact-items {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 3px;
+
+      a {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+
+        img {
+          height: 1.2rem;
+        }
+
+        &.email {
+          span {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+}
