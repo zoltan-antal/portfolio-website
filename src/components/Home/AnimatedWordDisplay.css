@@ -1,0 +1,17 @@
+.animated-word-display {
+  .caret.blinking {
+    animation: blink-caret var(--blink-duration) step-end infinite;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: black;
+  }
+}

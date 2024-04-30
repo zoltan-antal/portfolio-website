@@ -7,9 +7,7 @@ const App = () => {
   return (
     <>
       <Header></Header>
-      <main>
-        <Outlet />
-      </main>
+      <Outlet />
       <Footer></Footer>
     </>
   );
