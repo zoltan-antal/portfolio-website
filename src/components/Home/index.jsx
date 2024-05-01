@@ -11,7 +11,7 @@ const Home = () => {
       />
       <p className="introduction">
         I&apos;m a full-stack software developer specialising in web
-        development.
+        development, based in Berkshire, UK.
       </p>
       <div className="links">
         <Link to="/about">
