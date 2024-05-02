@@ -3,10 +3,18 @@ main.skills {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 15px;
+  gap: 20px;
 
   h1 {
     align-self: center;
+  }
+
+  &>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 6px;
   }
 
   table {
@@ -16,8 +24,8 @@ main.skills {
 
     caption {
       font-weight: bold;
-      font-size: 1.5rem;
-      padding-bottom: 6px;
+      font-size: 1.25rem;
+      padding-bottom: 4px;
     }
 
     tr {
@@ -84,8 +92,6 @@ main.skills {
       border-collapse: collapse;
 
       th {
-        padding: 5px 0;
-        font-weight: bold;
         font-size: 1rem;
 
         &:not(:last-child) {

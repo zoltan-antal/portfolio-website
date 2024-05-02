@@ -35,53 +35,58 @@ const Skills = () => {
   return (
     <main className="skills">
       <h1>My Skills</h1>
-      <table className="software-skills">
-        <caption>Software skills</caption>
-        <thead>
-          <tr>
-            <th>Languages</th>
-            <th>Frameworks</th>
-            <th>Dev tools & Libraries</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td colSpan={3}>Core competencies</td>
-          </tr>
-          <tr>
-            <td>{renderTechnologyGroup('languages', 'high')}</td>
-            <td>{renderTechnologyGroup('frameworks', 'high')}</td>
-            <td>{renderTechnologyGroup('tools', 'high')}</td>
-          </tr>
-          <tr>
-            <td colSpan={3}>Familiar with</td>
-          </tr>
-          <tr>
-            <td>{renderTechnologyGroup('languages', 'low')}</td>
-            <td>{renderTechnologyGroup('frameworks', 'low')}</td>
-            <td>{renderTechnologyGroup('tools', 'low')}</td>
-          </tr>
-        </tbody>
-      </table>
-      <table className="languages">
-        <caption>Languages</caption>
-        <thead>
-          <tr>
-            <th>Language</th>
-            <th>Level</th>
-            <th>CEFR level</th>
-          </tr>
-        </thead>
-        <tbody>
-          {languageSkills.map((skill) => (
-            <tr key={skill.language}>
-              <td>{skill.language}</td>
-              <td>{skill.level}</td>
-              <td>{skill.cefr}</td>
+      <div className="software-skills">
+        <h2>Software skills</h2>
+        <table className="software-skills">
+          <thead>
+            <tr>
+              <th>Languages</th>
+              <th>Frameworks</th>
+              <th>Dev tools & Libraries</th>
             </tr>
-          ))}
-        </tbody>
-      </table>
+          </thead>
+          <tbody>
+            <tr>
+              <td colSpan={3}>Core competencies</td>
+            </tr>
+            <tr>
+              <td>{renderTechnologyGroup('languages', 'high')}</td>
+              <td>{renderTechnologyGroup('frameworks', 'high')}</td>
+              <td>{renderTechnologyGroup('tools', 'high')}</td>
+            </tr>
+            <tr>
+              <td colSpan={3}>Familiar with</td>
+            </tr>
+            <tr>
+              <td>{renderTechnologyGroup('languages', 'low')}</td>
+              <td>{renderTechnologyGroup('frameworks', 'low')}</td>
+              <td>{renderTechnologyGroup('tools', 'low')}</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div className="other-skills">
+        <h2>Other skills</h2>
+        <table className="languages">
+          <caption>Languages</caption>
+          <thead>
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+              <th>CEFR level</th>
+            </tr>
+          </thead>
+          <tbody>
+            {languageSkills.map((skill) => (
+              <tr key={skill.language}>
+                <td>{skill.language}</td>
+                <td>{skill.level}</td>
+                <td>{skill.cefr}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
     </main>
   );
 };
