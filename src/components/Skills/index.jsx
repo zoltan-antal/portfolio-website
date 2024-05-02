@@ -45,7 +45,7 @@ const Skills = () => {
         </thead>
         <tbody>
           <tr>
-            <td colSpan={3}>Proficient skills</td>
+            <td colSpan={3}>Core competencies</td>
           </tr>
           <tr>
             <td>{renderTechnologyGroup('languages', 'high')}</td>
@@ -53,7 +53,7 @@ const Skills = () => {
             <td>{renderTechnologyGroup('tools', 'high')}</td>
           </tr>
           <tr>
-            <td colSpan={3}>Familiar skills</td>
+            <td colSpan={3}>Familiar with</td>
           </tr>
           <tr>
             <td>{renderTechnologyGroup('languages', 'low')}</td>
