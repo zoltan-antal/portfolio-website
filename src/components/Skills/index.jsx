@@ -67,10 +67,12 @@ const Skills = () => {
         <caption>Languages</caption>
         <thead>
           <tr>
-            <th>&nbsp;</th>
+            <th>Language</th>
             <th>Level</th>
             <th>CEFR level</th>
           </tr>
+        </thead>
+        <tbody>
           {languageSkills.map((skill) => (
             <tr key={skill.language}>
               <td>{skill.language}</td>
@@ -78,7 +80,7 @@ const Skills = () => {
               <td>{skill.cefr}</td>
             </tr>
           ))}
-        </thead>
+        </tbody>
       </table>
     </main>
   );
