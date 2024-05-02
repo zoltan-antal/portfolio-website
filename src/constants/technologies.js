@@ -29,10 +29,12 @@ import matlabIcon from '../assets/images/icons/technologies/matlab.png';
 import mongodbIcon from '../assets/images/icons/technologies/mongodb.svg';
 import mongooseIcon from '../assets/images/icons/technologies/mongoose.svg';
 import nodejsIcon from '../assets/images/icons/technologies/nodejs.svg';
+import nodejsIconTransparent from '../assets/images/icons/technologies/nodejs-transparent.svg';
 import npmIcon from '../assets/images/icons/technologies/npm.svg';
 import passportjsIcon from '../assets/images/icons/technologies/passportjs.png';
 import passportjsIconTransparent from '../assets/images/icons/technologies/passportjs-transparent.svg';
 import postgresqlIcon from '../assets/images/icons/technologies/postgresql.svg';
+import postgresqlIconTransparent from '../assets/images/icons/technologies/postgresql-transparent.svg';
 import postmanIcon from '../assets/images/icons/technologies/postman.svg';
 import pythonIcon from '../assets/images/icons/technologies/python.svg';
 import racketIcon from '../assets/images/icons/technologies/racket.svg';
@@ -40,7 +42,6 @@ import reactIcon from '../assets/images/icons/technologies/react.svg';
 import reactrouterIcon from '../assets/images/icons/technologies/reactrouter.svg';
 import reduxIcon from '../assets/images/icons/technologies/redux.svg';
 import rubyIcon from '../assets/images/icons/technologies/ruby.svg';
-import rubyIconTransparent from '../assets/images/icons/technologies/ruby-transparent.svg';
 import sqlIcon from '../assets/images/icons/technologies/sql.png';
 import tanstackqueryIcon from '../assets/images/icons/technologies/tanstackquery.png';
 import typescriptIcon from '../assets/images/icons/technologies/typescript.svg';
@@ -186,7 +187,7 @@ const technologies = {
   nodejs: {
     name: 'Node.js',
     icon: nodejsIcon,
-    iconTransparent: false,
+    iconTransparent: nodejsIconTransparent,
   },
   npm: {
     name: 'npm',
@@ -201,7 +202,7 @@ const technologies = {
   postgresql: {
     name: 'PostgreSQL',
     icon: postgresqlIcon,
-    iconTransparent: false,
+    iconTransparent: postgresqlIconTransparent,
   },
   postman: {
     name: 'Postman',
@@ -236,7 +237,7 @@ const technologies = {
   ruby: {
     name: 'Ruby',
     icon: rubyIcon,
-    iconTransparent: rubyIconTransparent,
+    iconTransparent: false,
   },
   sql: {
     name: 'SQL',
