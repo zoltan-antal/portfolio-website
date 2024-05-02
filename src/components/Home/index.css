@@ -17,24 +17,4 @@ main.home {
   .introduction {
     text-align: left;
   }
-
-  .links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-
-    button {
-      padding: 5px 10px;
-      border: none;
-      background-color: grey;
-      color: white;
-      font-size: 0.9rem;
-
-      &:hover {
-        background-color: dimgrey;
-      }
-    }
-  }
 }
