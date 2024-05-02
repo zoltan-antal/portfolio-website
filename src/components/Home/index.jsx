@@ -13,7 +13,7 @@ const Home = () => {
         I&apos;m a full-stack software developer specialising in web
         development, based in Berkshire, UK.
       </p>
-      <div className="page-links">
+      <div className="button-group">
         <Link to="/about">
           <button>Learn more about me</button>
         </Link>

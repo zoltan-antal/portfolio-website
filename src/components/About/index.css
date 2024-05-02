@@ -16,6 +16,19 @@ main.about {
       gap: 20px;
 
       text-align: justify;
+
+      #cv-buttons {
+        gap: 15px;
+
+        button {
+          background-color: lightgrey;
+          color: black;
+
+          &:hover {
+            background-color: grey;
+          }
+        }
+      }
     }
 
     .photo {

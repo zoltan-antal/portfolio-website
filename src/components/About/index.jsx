@@ -1,8 +1,22 @@
 import './index.css';
 import { Link } from 'react-router-dom';
 import wipIcon from '../../assets/images/icons/wip.svg';
+import cv from '../../assets/files/Zoltan_Antal-CV.pdf';
 
 const About = () => {
+  const downloadCV = () => {
+    const cvDownloadLink = document.createElement('a');
+    cvDownloadLink.href = cv;
+    cvDownloadLink.setAttribute('download', 'Zoltan_Antal-CV.pdf');
+    cvDownloadLink.click();
+  };
+
+  const viewCV = () => {
+    window.open(cv, '_blank', 'noopener,noreferrer');
+  };
+
+  console.log(Object.keys(cv));
+
   return (
     <main className="about">
       <h1>About me</h1>
@@ -35,10 +49,14 @@ const About = () => {
             nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
             voluptas nulla pariatur?
           </p>
+          <div className="button-group" id="cv-buttons">
+            <button onClick={viewCV}>View my CV</button>
+            <button onClick={downloadCV}>Download my CV</button>
+          </div>
         </div>
         <img className="photo" src={wipIcon} alt="Portrait" />
       </div>
-      <div className="page-links">
+      <div className="button-group">
         <Link to="/skills">
           <button>View my skillset</button>
         </Link>
