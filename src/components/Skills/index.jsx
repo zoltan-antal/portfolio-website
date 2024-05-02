@@ -1,12 +1,13 @@
 import './index.css';
-import skills from '../../constants/skills';
 import technologies from '../../constants/technologies';
+import softwareSkills from '../../constants/softwareSkills';
+import languageSkills from '../../constants/languageSkills';
 
 const Skills = () => {
   const renderTechnologyGroup = (category, familiarity) => {
     return (
       <div className="technology-group">
-        {skills
+        {softwareSkills
           .filter(
             (skill) =>
               skill.category === category && skill.familiarity === familiarity
@@ -34,7 +35,7 @@ const Skills = () => {
   return (
     <main className="skills">
       <h1>My Skills</h1>
-      <table>
+      <table className="software-skills">
         <caption>Software skills</caption>
         <thead>
           <tr>
@@ -61,6 +62,23 @@ const Skills = () => {
             <td>{renderTechnologyGroup('tools', 'low')}</td>
           </tr>
         </tbody>
+      </table>
+      <table className="languages">
+        <caption>Languages</caption>
+        <thead>
+          <tr>
+            <th>&nbsp;</th>
+            <th>Level</th>
+            <th>CEFR level</th>
+          </tr>
+          {languageSkills.map((skill) => (
+            <tr key={skill.language}>
+              <td>{skill.language}</td>
+              <td>{skill.level}</td>
+              <td>{skill.cefr}</td>
+            </tr>
+          ))}
+        </thead>
       </table>
     </main>
   );

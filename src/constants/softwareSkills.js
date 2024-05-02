@@ -1,4 +1,4 @@
-const skills = [
+const softwareSkills = [
   { technology: 'javascript', category: 'languages', familiarity: 'high' },
   { technology: 'typescript', category: 'languages', familiarity: 'high' },
   { technology: 'python', category: 'languages', familiarity: 'high' },
@@ -47,4 +47,4 @@ const skills = [
   // { technology: 'lodash', category: 'tools', familiarity: 'low' },
 ];
 
-export default skills;
+export default softwareSkills;
