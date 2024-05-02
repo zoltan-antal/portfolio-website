@@ -50,6 +50,7 @@ html {
   main {
     flex-grow: 1;
     padding: 20px 30px 40px;
+    margin: 0 max(0px, calc(50vw - 650px));
   }
 }
 

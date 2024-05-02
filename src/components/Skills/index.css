@@ -1,0 +1,80 @@
+main.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: stretch;
+  gap: 15px;
+
+  h1 {
+    align-self: center;
+  }
+
+  table {
+    height: fit-content;
+    width: 100%;
+    table-layout: fixed;
+
+    caption {
+      font-weight: bold;
+      font-size: 1.5rem;
+      padding-bottom: 6px;
+    }
+
+    tr {
+      height: 100%;
+
+      th {
+        font-size: 1.2rem;
+        background-color: dimgrey;
+        color: white;
+        padding: 5px 0;
+      }
+
+      td {
+        text-align: center;
+
+        &:not(:last-child) {
+          border-right: 1px solid lightgray;
+        }
+
+        &[colspan] {
+          background-color: lightgrey;
+          padding: 5px 0;
+        }
+
+        .technology-group {
+          height: 100%;
+          padding: 12px 6px;
+
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(20%, 1fr));
+          column-gap: 6px;
+          row-gap: 4px;
+          align-items: center;
+          justify-content: center;
+          align-content: start;
+
+          .technology {
+            flex-basis: 20%;
+            height: 4.6rem;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            gap: 4px;
+
+            .logo {
+              height: 2rem;
+            }
+
+            .name {
+              white-space: pre-line;
+              line-height: 1.2;
+            }
+          }
+        }
+      }
+    }
+  }
+}
