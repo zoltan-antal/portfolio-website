@@ -31,11 +31,11 @@ const Contact = () => {
       <div className="contact-category">
         <p>Or connect with me with on:</p>
         <div className="contact-items">
-          <a className="linkedin" href="">
+          <a className="linkedin" href={contactDetails.linkedin}>
             <img src={linkedinIcon} alt="LinkedIn logo" />
             LinkedIn
           </a>
-          <a className="github" href="">
+          <a className="github" href={contactDetails.github}>
             <img src={githubIcon} alt="GitHub logo" />
             GitHub
           </a>
