@@ -23,6 +23,10 @@ label {
   color: black;
 }
 
+p {
+  line-height: 1.45rem;
+}
+
 button {
   &:hover {
     cursor: pointer;

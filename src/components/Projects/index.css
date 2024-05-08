@@ -69,6 +69,7 @@ main.projects {
         flex-direction: column;
         justify-content: flex-start;
         align-items: flex-start;
+        flex-grow: 1;
         gap: 10px;
 
         .header {

@@ -105,10 +105,9 @@ const Projects = () => {
         <div className="header">
           <h2>Learning projects</h2>
           <p>
-            Sed ut perspiciatis unde omnis iste natus error sit voluptatem
-            accusantium doloremque laudantium, totam rem aperiam, eaque ipsa
-            quae ab illo inventore veritatis et quasi architecto beatae vitae
-            dicta sunt explicabo.
+            Early works created during my journey as a beginner developer -
+            these projects showcase my growth and my experimentation with a
+            limited toolset.
           </p>
           <button
             onClick={(e) => {
