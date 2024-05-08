@@ -28,9 +28,17 @@ nav {
           transition: transform 0.3s ease-in-out;
         }
 
-        &:hover {
+        @media only screen and not (max-width: 768px) {
+          &:hover {
+            &::before {
+              transform-origin: left;
+              transform: scaleX(1);
+            }
+          }
+        }
+
+        &.active {
           &::before {
-            transform-origin: left;
             transform: scaleX(1);
           }
         }
