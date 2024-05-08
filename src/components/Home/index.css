@@ -9,12 +9,11 @@ main.home {
     font-size: 2.5rem;
   }
 
-
   .animated-word-display {
     font-size: 1.5rem;
   }
 
   .introduction {
-    text-align: left;
+    text-align: center;
   }
 }
