@@ -24,26 +24,51 @@ main.skills {
       padding-bottom: 4px;
     }
 
-    tr {
-      height: 100%;
-
+    thead {
       th {
         font-size: 1.2rem;
         background-color: dimgrey;
         color: white;
         padding: 5px 0;
       }
+    }
 
-      td {
-        text-align: center;
+    tbody {
+      tr {
+        height: 100%;
 
-        &:not(:last-child) {
-          border-right: 1px solid lightgray;
+        td {
+          text-align: center;
+
+          &:not(:last-child) {
+            border-right: 1px solid lightgray;
+          }
         }
 
-        &[colspan] {
+        th {
           background-color: lightgrey;
           padding: 5px 0;
+          font-weight: normal;
+        }
+      }
+
+      &.mobile {
+        tr {
+          th {
+            font-size: 1.2rem;
+            background-color: dimgrey;
+            color: white;
+            font-weight: bold;
+          }
+
+          td:has(strong) {
+            background-color: lightgrey;
+            padding: 5px 0;
+
+            strong {
+              font-weight: normal;
+            }
+          }
         }
       }
     }
@@ -60,6 +85,10 @@ main.skills {
         align-items: center;
         justify-content: center;
         align-content: start;
+
+        @media only screen and (max-width: 768px) {
+          column-gap: 22px;
+        }
 
         .technology {
           flex-basis: 20%;
@@ -82,21 +111,32 @@ main.skills {
         }
       }
     }
+  }
 
-    &.languages {
-      width: 50%;
-      border-collapse: collapse;
+  .other-skills {
+    align-self: stretch;
 
-      th {
-        font-size: 1rem;
+    table {
+      &.languages {
+        width: 50%;
+        border-collapse: collapse;
 
-        &:not(:last-child) {
-          border-right: 1px solid white;
+        th {
+          font-size: 1rem;
+
+          &:not(:last-child) {
+            border-right: 1px solid white;
+          }
         }
-      }
 
-      td {
-        padding: 2.5px;
+        td {
+          padding: 2.5px;
+        }
+
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          table-layout: auto;
+        }
       }
     }
   }

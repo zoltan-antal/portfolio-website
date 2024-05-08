@@ -4,6 +4,11 @@ import softwareSkills from '../../constants/softwareSkills';
 import languageSkills from '../../constants/languageSkills';
 
 const Skills = () => {
+  const mobileLayout =
+    /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+
   const renderTechnologyGroup = (category, familiarity) => {
     return (
       <div className="technology-group">
@@ -37,32 +42,96 @@ const Skills = () => {
       <h1>My Skills</h1>
       <div className="software-skills">
         <h2>Software skills</h2>
-        <table className="software-skills">
-          <thead>
-            <tr>
-              <th>Languages</th>
-              <th>Frameworks</th>
-              <th>Dev tools & Libraries</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td colSpan={3}>Core competencies</td>
-            </tr>
-            <tr>
-              <td>{renderTechnologyGroup('languages', 'high')}</td>
-              <td>{renderTechnologyGroup('frameworks', 'high')}</td>
-              <td>{renderTechnologyGroup('tools', 'high')}</td>
-            </tr>
-            <tr>
-              <td colSpan={3}>Familiar with</td>
-            </tr>
-            <tr>
-              <td>{renderTechnologyGroup('languages', 'low')}</td>
-              <td>{renderTechnologyGroup('frameworks', 'low')}</td>
-              <td>{renderTechnologyGroup('tools', 'low')}</td>
-            </tr>
-          </tbody>
+        <table className={`software-skills`}>
+          {!mobileLayout ? (
+            <>
+              <thead>
+                <tr>
+                  <th>Languages</th>
+                  <th>Frameworks</th>
+                  <th>Dev tools & Libraries</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th colSpan={3}>Core competencies</th>
+                </tr>
+                <tr>
+                  <td>{renderTechnologyGroup('languages', 'high')}</td>
+                  <td>{renderTechnologyGroup('frameworks', 'high')}</td>
+                  <td>{renderTechnologyGroup('tools', 'high')}</td>
+                </tr>
+                <tr>
+                  <th colSpan={3}>Familiar with</th>
+                </tr>
+                <tr>
+                  <td>{renderTechnologyGroup('languages', 'low')}</td>
+                  <td>{renderTechnologyGroup('frameworks', 'low')}</td>
+                  <td>{renderTechnologyGroup('tools', 'low')}</td>
+                </tr>
+              </tbody>
+            </>
+          ) : (
+            <tbody className="mobile">
+              <tr>
+                <th>Languages</th>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Core competencies</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>{renderTechnologyGroup('languages', 'high')}</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Familiar with</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>{renderTechnologyGroup('languages', 'low')}</td>
+              </tr>
+              <tr>
+                <th>Frameworks</th>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Core competencies</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>{renderTechnologyGroup('frameworks', 'high')}</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Familiar with</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>{renderTechnologyGroup('frameworks', 'low')}</td>
+              </tr>
+              <tr>
+                <th>Dev tools & Libraries</th>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Core competencies</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>{renderTechnologyGroup('tools', 'high')}</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Familiar with</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>{renderTechnologyGroup('tools', 'low')}</td>
+              </tr>
+            </tbody>
+          )}
         </table>
       </div>
       <div className="other-skills">
