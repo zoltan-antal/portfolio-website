@@ -50,8 +50,8 @@ main.projects {
         height: var(--screenshot-height);
 
         &:has(.wip) {
-          width: calc(var(--screenshot-height) * 1.78);
-          /* width: calc(var(--screenshot-height) * 2.12); */
+          /* width: calc(var(--screenshot-height) * 1.78); */
+          width: calc(var(--screenshot-height) * 2.12);
         }
 
         >img {
@@ -78,6 +78,10 @@ main.projects {
           justify-content: flex-start;
           align-items: center;
           gap: 15px;
+
+          .name {
+            white-space: pre-wrap;
+          }
 
           .feature-icons {
             display: flex;
@@ -192,14 +196,17 @@ main.projects {
   }
 
   #main-projects {
+    align-self: stretch;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
-    align-self: stretch;
     gap: 10px;
   }
 
   #learning-projects {
+    align-self: stretch;
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

@@ -30,7 +30,9 @@ const Projects = () => {
         </div>
         <div className="info">
           <div className="header">
-            <h3 className="name">{project.name}</h3>
+            <h3 className="name">
+              {project.name + (project.wip ? '\n– WORK IN PROGRESS' : '')}
+            </h3>
             <div className="feature-icons">
               {project.desktop && (
                 <div data-tooltip="Desktop layout">
@@ -65,10 +67,7 @@ const Projects = () => {
               </div>
             ))}
           </div>
-          <div className="description">
-            {project.wip && <p>WORK IN PROGRESS</p>}
-            {project.description}
-          </div>
+          <div className="description">{project.description}</div>
           <div className="links">
             {project.url && (
               <a href={project.url} target="_blank" rel="noopener noreferrer">
@@ -105,9 +104,8 @@ const Projects = () => {
         <div className="header">
           <h2>Learning projects</h2>
           <p>
-            Early works created during my journey as a beginner developer -
-            these projects showcase my growth and my experimentation with a
-            limited toolset.
+            Project created earlier in my developer journey – they showcase my
+            growth and experimentation with a limited toolset.
           </p>
           <button
             onClick={(e) => {
