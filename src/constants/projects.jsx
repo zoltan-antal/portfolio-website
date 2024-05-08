@@ -280,8 +280,9 @@ const projects = [
           Racket.
         </p>
         <p>
-          Final project of the How to Code course of the University of British
-          Columbia.
+          Final project of the University of British Columbia&apos;s systematic
+          programming design course &lsquo;How to Code&lsquo; based on the
+          &lsquo;How to Design Programs&lsquo; book by Felleisen et al.
         </p>
       </>
     ),
