@@ -7,11 +7,10 @@ nav {
     gap: 20px;
 
     list-style-type: none;
-    /* font-variant: small-caps; */
-    /* text-transform: uppercase; */
 
-    /* Underlining animation */
     li {
+
+      /* Custom underlining */
       a {
         position: relative;
 
@@ -23,23 +22,24 @@ nav {
           background-color: black;
           bottom: -1px;
           transform-origin: left;
-          /* transform-origin: right; */
           transform: scaleX(0);
           transition: transform 0.3s ease-in-out;
         }
 
+        /* Active link always on */
+        &.active {
+          &::before {
+            transform: scaleX(1);
+          }
+        }
+
+        /* Animation on hover */
         @media only screen and not (max-width: 768px) {
           &:hover {
             &::before {
               transform-origin: left;
               transform: scaleX(1);
             }
-          }
-        }
-
-        &.active {
-          &::before {
-            transform: scaleX(1);
           }
         }
       }
