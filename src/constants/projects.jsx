@@ -25,8 +25,8 @@ const projects = [
           A web app offering interactive visualisations of popular sorting
           algorithms. Users can observe the sorting process in real-time, adjust
           the flow of the visualisation with interactive control buttons, and
-          customise the algorithm input data. It serves as an invaluable
-          learning tool for understanding algorithmic concepts.
+          customise the input data. It serves as an handy learning tool for
+          understanding algorithmic concepts.
         </p>
       </>
     ),
@@ -47,13 +47,12 @@ const projects = [
       <>
         <p>
           A web app that simplifies the process of crafting and managing
-          professional resumes. It features an intuitive editor where users can
-          input their information and generate their CV in real-time for
-          immediate feedback. There are options for multiple CV creation,
-          editing, duplication, and deletion, empowering users to tailor their
-          resumes for various job applications. The app also supports user
-          accounts for accessing work from any device, making it a convenient
-          tool for jobseekers.
+          professional CVs. It features an intuitive editor where users can
+          input their information to generate their CV in real-time. There are
+          options for duplicating or creating multiple CVs, allowing users to
+          tailor their CVs for various job applications. The app also supports
+          user accounts for accessing work from any device, making it a
+          convenient tool for jobseekers.
         </p>
       </>
     ),
@@ -87,7 +86,7 @@ const projects = [
           An upcoming web app designed to be a solution for household consumable
           inventory management. From groceries to toiletries, this app aims to
           streamline inventory tracking and shopping trips. Features include
-          barcode scanning or manual entry for inventory management, predictive
+          barcode scanning or manual entry for inventory updates, predictive
           shopping list generation based on consumption patterns, customisable
           categorisation and labelling options, and household collaboration.
           With this tool, users can efficiently track their household items,
@@ -123,7 +122,11 @@ const projects = [
     description: (
       <>
         <p>
-          A weather app created to practice fetching data from third-party APIs.
+          A weather app created to practise fetching data from third-party APIs.
+        </p>
+        <p>
+          Users can look up weather anywhere in the world and switch between
+          hourly and daily forecasts.
         </p>
       </>
     ),
@@ -137,15 +140,15 @@ const projects = [
     technologies: ['javascript'],
   },
   {
-    name: 'Todo List',
+    name: 'To-Do List',
     category: 'learning',
     wip: false,
     description: (
       <>
-        <p>Created to practice object-oriented design concepts.</p>
+        <p>Created to practise object-oriented design concepts.</p>
         <p>
-          Users can create projects, and populate them with todos having
-          properties such as description, due date and priority. The todos can
+          Users can create projects and populate them with tasks, which have
+          properties such as description, due date and priority. The tasks can
           later be modified, deleted or marked as completed.
         </p>
       </>
@@ -166,7 +169,7 @@ const projects = [
     description: (
       <>
         <p>
-          An imaginary admin dashboard created to practice CSS Grid & Flexbox.
+          An imaginary admin dashboard created to practise CSS Grid & Flexbox.
         </p>
       </>
     ),
@@ -185,7 +188,7 @@ const projects = [
   //   wip: false,
   //   description: (
   //     <>
-  //       <p>Created to practice object-oriented design concepts.</p>
+  //       <p>Created to practise object-oriented design concepts.</p>
   //       <p>
   //         Users can create books with properties such as title, author and page
   //         count. The books can later be modified, deleted or marked as read.
@@ -207,7 +210,7 @@ const projects = [
   //   wip: false,
   //   description: (
   //     <>
-  //       <p>Created to practice object-oriented design concepts.</p>
+  //       <p>Created to practise object-oriented design concepts.</p>
   //       <p>
   //         The classic tic-tac-toe game playable by two players.
   //       </p>
@@ -223,19 +226,19 @@ const projects = [
   //   technologies: ['javascript'],
   // },
   {
-    name: 'Etch A Sketch',
+    name: 'Etch-A-Sketch',
     category: 'learning',
     wip: false,
     description: (
       <>
         <p>
-          Created to practice event-handling and DOM-manipulation techniques in
+          Created to practise event-handling and DOM-manipulation techniques in
           JavaScript.
         </p>
         <p>
-          An emulator of the classic etch-a-sketch game with fill, shade, colour
-          & eraser modes and an option to change the grid size, toggle gridlines
-          and clear the grid.
+          A recreation of the classic game with fill, shade, colour & eraser
+          modes and options to change the grid size, toggle gridlines, and clear
+          the grid.
         </p>
       </>
     ),
@@ -255,7 +258,7 @@ const projects = [
     description: (
       <>
         <p>
-          A simple calculator created to practice basic JavaScript and general
+          A simple calculator created to practise basic JavaScript and general
           programming techniques.
         </p>
       </>
@@ -276,8 +279,8 @@ const projects = [
     description: (
       <>
         <p>
-          Functional programming project written in the Lisp-like language
-          Racket.
+          Written in the Lisp-like language Racket to practise functional
+          programming concepts.
         </p>
         <p>
           Final project of the University of British Columbia&apos;s systematic
