@@ -7,7 +7,7 @@ const AnimatedWordDisplay = ({ words }) => {
       type: 100,
       delete: 50,
       typePause: 400,
-      deletePause: 2250,
+      deletePause: 2500,
       caretBlink: 1000,
     }),
     []
