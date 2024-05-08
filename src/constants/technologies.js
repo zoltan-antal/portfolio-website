@@ -2,6 +2,8 @@ import apolloIcon from '../assets/images/icons/technologies/apollo.png';
 import axiosIcon from '../assets/images/icons/technologies/axios.svg';
 import bashIcon from '../assets/images/icons/technologies/bash.svg';
 import bootstrapIcon from '../assets/images/icons/technologies/bootstrap.svg';
+import cIcon from '../assets/images/icons/technologies/c.svg';
+import cIconTransparent from '../assets/images/icons/technologies/c-transparent.svg';
 import csharpIcon from '../assets/images/icons/technologies/csharp.svg';
 import csharpIconTransparent from '../assets/images/icons/technologies/csharp-transparent.svg';
 import cssIcon from '../assets/images/icons/technologies/css.svg';
@@ -73,6 +75,11 @@ const technologies = {
     name: 'Bootstrap',
     icon: bootstrapIcon,
     iconTransparent: false,
+  },
+  c: {
+    name: 'C',
+    icon: cIcon,
+    iconTransparent: cIconTransparent,
   },
   csharp: {
     name: 'C#',
