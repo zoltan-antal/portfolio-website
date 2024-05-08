@@ -1,5 +1,20 @@
-/* @import url('https://fonts.googleapis.com/css?family=Onest'); */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'InterDownloaded';
+  src: url('./assets/fonts/Inter-VariableFont_slnt\,wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'OpenSansDownloaded';
+  src: url('./assets/fonts/OpenSans-VariableFont_wdth\,wght.ttf') format('truetype');
+  font-weight: 300 800;
+  font-style: normal;
+}
 
 @font-face {
   font-family: 'OnestDownloaded';
@@ -13,7 +28,7 @@
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: Onest, OnestDownloaded, Arial, sans-serif;
+  font-family: Inter, InterDownloaded, 'Open Sans', OpenSansDownloaded, Onest, OnestDownloaded, Arial, sans-serif;
 }
 
 p,
