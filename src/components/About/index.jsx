@@ -57,11 +57,11 @@ const About = () => {
         <img className="photo" src={wipIcon} alt="Portrait" />
       </div>
       <div className="button-group">
-        <Link to="/skills">
-          <button>View my skillset</button>
-        </Link>
         <Link to="/projects">
           <button>Take a look at my work</button>
+        </Link>
+        <Link to="/skills">
+          <button>View my skillset</button>
         </Link>
       </div>
       {/* <p>
