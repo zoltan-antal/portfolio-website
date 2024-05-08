@@ -168,6 +168,26 @@ main.projects {
           }
         }
       }
+
+      @media only screen and (max-width: 768px) {
+        flex-direction: column-reverse;
+
+        &:nth-child(even) {
+          flex-direction: column-reverse;
+        }
+
+        .screenshot {
+          height: auto;
+
+          &:has(.wip) {
+            display: none;
+          }
+
+          >img {
+            width: 100%;
+          }
+        }
+      }
     }
   }
 
