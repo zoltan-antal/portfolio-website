@@ -1,12 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Onest');
-@import url('https://fonts.googleapis.com/css?family=Montserrat');
+/* @import url('https://fonts.googleapis.com/css?family=Onest'); */
+@import url('https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap');
+
+@font-face {
+  font-family: 'OnestDownloaded';
+  src: url('./assets/fonts/Onest-VariableFont_wght.ttf') format('truetype');
+  font-weight: 100 900;
+  font-style: normal;
+}
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
   text-decoration: none;
-  font-family: Onest, Arial, sans-serif;
+  font-family: Onest, OnestDownloaded, Arial, sans-serif;
 }
 
 p,
