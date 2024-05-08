@@ -8,6 +8,10 @@ main.contact {
     align-items: center;
     gap: 4px;
 
+    .description {
+      text-align: center;
+    }
+
     .contact-items {
       display: flex;
       flex-direction: column;

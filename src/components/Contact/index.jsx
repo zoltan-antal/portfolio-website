@@ -10,7 +10,7 @@ const Contact = () => {
     <main className="contact">
       <h1>Contact me</h1>
       <div className="contact-category">
-        <p>
+        <p className="description">
           To chat about my work, a project collaboration or a job opportunity,
           feel free to contact me at:
         </p>
