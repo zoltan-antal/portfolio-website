@@ -4,6 +4,12 @@ header {
   grid-template-areas: '. nav';
   padding: 10px;
 
+  @media only screen and not (max-width: 768px) {
+    &.scrolled {
+      border-bottom: 1px solid black;
+    }
+  }
+
   @media only screen and (max-width: 768px) {
     grid-template-columns: 1fr;
     grid-template-areas: 'nav';

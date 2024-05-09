@@ -13,8 +13,10 @@ const App = () => {
   return (
     <>
       <Header></Header>
-      <Outlet />
-      <Footer></Footer>
+      <div className="body">
+        <Outlet />
+        <Footer></Footer>
+      </div>
     </>
   );
 };

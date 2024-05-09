@@ -73,6 +73,12 @@ html {
   justify-content: flex-start;
   align-items: stretch;
 
+  @media only screen and not (max-width: 768px) {
+    .body {
+      overflow-y: auto;
+    }
+  }
+
   main {
     flex-grow: 1;
     padding: 20px 30px 40px;
