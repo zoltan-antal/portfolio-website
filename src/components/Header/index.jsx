@@ -3,30 +3,51 @@ import { useState, useEffect } from 'react';
 import Nav from './Nav';
 
 const Header = () => {
-  const [scrolled, setScrolled] = useState(false);
+  const mobileLayout =
+    /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+  const [headerFixed, setHeaderFixed] = useState(false);
 
   useEffect(() => {
-    const bodyElement = document.querySelector('.body');
+    const rootElement = document.querySelector('#root');
+    let prevScrollPos = rootElement.scrollTop;
+    const topClearance = 100;
 
     const handleScroll = () => {
-      if (bodyElement.scrollTop === 0) {
-        setScrolled(false);
+      const currentScrollPos = rootElement.scrollTop;
+
+      if (currentScrollPos === 0) {
+        // Scrolled to the top
+        setHeaderFixed(false);
+      } else if (
+        rootElement.clientHeight + rootElement.scrollTop >=
+          rootElement.scrollHeight &&
+        rootElement.scrollTop > topClearance &&
+        !mobileLayout
+      ) {
+        // Scrolled to the bottom
+        setHeaderFixed(true);
+      } else if (currentScrollPos < prevScrollPos) {
+        // Scrolling up
+        setHeaderFixed(true);
       } else {
-        setScrolled(true);
+        // Scrolling down
+        setHeaderFixed(false);
       }
+
+      prevScrollPos = currentScrollPos;
     };
 
-    bodyElement.addEventListener('scroll', () => {
-      handleScroll();
-    });
+    rootElement.addEventListener('scroll', handleScroll);
 
     return () => {
-      bodyElement.removeEventListener('scroll', handleScroll);
+      rootElement.removeEventListener('scroll', handleScroll);
     };
-  }, []);
+  }, [mobileLayout]);
 
   return (
-    <header className={scrolled ? 'scrolled' : ''}>
+    <header className={`${headerFixed ? 'fixed' : ''}`}>
       <Nav></Nav>
     </header>
   );

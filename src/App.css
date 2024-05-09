@@ -66,6 +66,9 @@ html {
 }
 
 #root {
+  --scrollbar-width: 12px;
+  --header-height: 40px;
+
   height: 100vh;
   height: 100dvh;
   display: flex;
@@ -73,16 +76,13 @@ html {
   justify-content: flex-start;
   align-items: stretch;
 
-  @media only screen and not (max-width: 768px) {
-    .body {
-      overflow-y: auto;
-    }
-  }
+  overflow-y: scroll;
+  overflow-x: hidden;
 
   main {
     flex-grow: 1;
     padding: 20px 30px 40px;
-    margin: 0 max(0px, calc(50vw - 650px));
+    margin: var(--header-height) max(0px, calc(50vw - 650px)) 0;
 
     @media only screen and (max-width: 768px) {
       padding: 20px 15px 40px;
@@ -133,7 +133,7 @@ html {
   /* Webkit scrollbar */
   @supports selector(::-webkit-scrollbar) {
     ::-webkit-scrollbar {
-      width: 12px;
+      width: var(--scrollbar-width);
     }
 
     ::-webkit-scrollbar-track {

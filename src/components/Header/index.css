@@ -2,11 +2,21 @@ header {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-areas: '. nav';
-  padding: 10px;
+  --header-padding: 10px;
+  padding: var(--header-padding);
+  height: var(--header-height);
+  margin-bottom: calc(-1 * (var(--header-height)));
 
-  @media only screen and not (max-width: 768px) {
-    &.scrolled {
-      border-bottom: 1px solid black;
+  &.fixed {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+
+    @media only screen and not (max-width: 768px) {
+      @supports selector(::-webkit-scrollbar) {
+        right: var(--scrollbar-width);
+      }
     }
   }
 
