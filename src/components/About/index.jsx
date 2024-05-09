@@ -20,8 +20,6 @@ const About = () => {
     window.open(cv, '_blank', 'noopener,noreferrer');
   };
 
-  console.log(Object.keys(cv));
-
   return (
     <main className="about">
       <h1>About me</h1>
