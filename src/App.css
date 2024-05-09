@@ -122,6 +122,38 @@ html {
   }
 }
 
+/* Scrollbar */
+@media only screen and not (max-width: 768px) {
+  /* Webkit scrollbar */
+  @supports selector(::-webkit-scrollbar) {
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: white;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #c1c1c1;
+      border-radius: 0px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #a9a9a9;
+    }
+  }
+
+  /* Non-Webkit scrollbar */
+  @supports not selector(::-webkit-scrollbar) {
+    * {
+      scrollbar-width: auto;
+      scrollbar-color: #c1c1c1 white;
+    }
+  }
+}
+
+
 [data-tooltip] {
   position: relative;
 
