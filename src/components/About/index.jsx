@@ -4,6 +4,11 @@ import wipIcon from '../../assets/images/icons/wip.svg';
 import cv from '../../assets/files/Zoltan_Antal-CV.pdf';
 
 const About = () => {
+  const mobileLayout =
+    /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    );
+
   const downloadCV = () => {
     const cvDownloadLink = document.createElement('a');
     cvDownloadLink.href = cv;
@@ -50,7 +55,7 @@ const About = () => {
             voluptas nulla pariatur?
           </p>
           <div className="button-group" id="cv-buttons">
-            <button onClick={viewCV}>View my CV</button>
+            {!mobileLayout && <button onClick={viewCV}>View my CV</button>}
             <button onClick={downloadCV}>Download my CV</button>
           </div>
         </div>
