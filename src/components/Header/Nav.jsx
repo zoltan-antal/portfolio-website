@@ -6,27 +6,27 @@ const Nav = () => {
     <nav>
       <ul>
         <li>
-          <NavLink exact to="/" activeClassName="active">
+          <NavLink exact="true" to="/" activeclassname="active">
             Home
           </NavLink>
         </li>
         <li>
-          <NavLink to="/about" activeClassName="active">
+          <NavLink to="/about" activeclassname="active">
             About
           </NavLink>
         </li>
         <li>
-          <NavLink to="/projects" activeClassName="active">
+          <NavLink to="/projects" activeclassname="active">
             Projects
           </NavLink>
         </li>
         <li>
-          <NavLink to="/skills" activeClassName="active">
+          <NavLink to="/skills" activeclassname="active">
             Skills
           </NavLink>
         </li>
         <li>
-          <NavLink to="/contact" activeClassName="active">
+          <NavLink to="/contact" activeclassname="active">
             Contact
           </NavLink>
         </li>
