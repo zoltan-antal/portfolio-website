@@ -222,6 +222,10 @@ main.projects {
         'description .';
       column-gap: 5px;
 
+      @media only screen and (max-width: 768px) {
+        align-items: center;
+      }
+
       &:has(+ .content.hidden) {
         padding-bottom: 10px;
         border-bottom: 1px solid black;
@@ -229,6 +233,7 @@ main.projects {
 
       &>h2 {
         grid-area: title;
+        user-select: none;
       }
 
       &>p {

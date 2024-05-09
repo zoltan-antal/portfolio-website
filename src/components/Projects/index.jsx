@@ -16,7 +16,7 @@ import expandIcon from '../../assets/images/icons/chevron-down.svg';
 import collapseIcon from '../../assets/images/icons/chevron-up.svg';
 
 const Projects = () => {
-  const [showAllProjects, setShowAllProjects] = useState(false);
+  const [allProjectsVisible, setAllProjectsVisible] = useState(false);
 
   const renderProject = (project) => {
     return (
@@ -89,6 +89,26 @@ const Projects = () => {
     );
   };
 
+  const toggleAllProjects = (e) => {
+    setAllProjectsVisible((val) => !val);
+    setTimeout(() => {
+      e.target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }, 25);
+  };
+
+  const showAllProjects = (e) => {
+    setAllProjectsVisible(true);
+    setTimeout(() => {
+      e.target.scrollIntoView({
+        behavior: 'smooth',
+        block: 'start',
+      });
+    }, 25);
+  };
+
   return (
     <main className="projects">
       <h1>My Projects</h1>
@@ -102,29 +122,19 @@ const Projects = () => {
       </div>
       <div id="learning-projects" className="collapsible">
         <div className="header">
-          <h2>Learning projects</h2>
+          <h2 onClick={showAllProjects}>Learning projects</h2>
           <p>
             Project created earlier in my developer journey – they showcase my
             growth and experimentation with a limited toolset.
           </p>
-          <button
-            onClick={(e) => {
-              setShowAllProjects((val) => !val);
-              setTimeout(() => {
-                e.target.scrollIntoView({
-                  behavior: 'smooth',
-                  block: 'start',
-                });
-              }, 25);
-            }}
-          >
+          <button onClick={toggleAllProjects}>
             <img
-              src={showAllProjects ? collapseIcon : expandIcon}
-              alt={showAllProjects ? 'hide' : 'show'}
+              src={allProjectsVisible ? collapseIcon : expandIcon}
+              alt={allProjectsVisible ? 'hide' : 'show'}
             />
           </button>
         </div>
-        <div className={`content ${showAllProjects ? 'visible' : 'hidden'}`}>
+        <div className={`content ${allProjectsVisible ? 'visible' : 'hidden'}`}>
           <div className="projects">
             {projects
               .filter((project) => project.category === 'learning')
