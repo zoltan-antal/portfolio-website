@@ -21,9 +21,14 @@ const Header = () => {
         // Scrolled to the top
         setHeaderFixed(false);
       } else if (
+        rootElement.clientHeight + topClearance >=
+        rootElement.scrollHeight
+      ) {
+        // Scrolling range is small
+        setHeaderFixed(true);
+      } else if (
         rootElement.clientHeight + rootElement.scrollTop >=
           rootElement.scrollHeight &&
-        rootElement.scrollTop > topClearance &&
         !mobileLayout
       ) {
         // Scrolled to the bottom
