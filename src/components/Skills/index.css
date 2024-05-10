@@ -1,8 +1,9 @@
 main.skills {
-  gap: 20px;
+  gap: 35px;
 
   h1 {
     align-self: center;
+    margin-bottom: -15px;
   }
 
   &>div {
@@ -113,7 +114,18 @@ main.skills {
     }
   }
 
-  .other-skills {
+  .section.software-skills {
+    .disclaimer {
+      text-align: center;
+      font-size: 0.95rem;
+
+      @media only screen and (max-width: 768px) {
+        margin-top: -15px;
+      }
+    }
+  }
+
+  .section.other-skills {
     align-self: stretch;
 
     table {

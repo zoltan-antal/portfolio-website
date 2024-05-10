@@ -40,7 +40,7 @@ const Skills = () => {
   return (
     <main className="skills">
       <h1>My Skills</h1>
-      <div className="software-skills">
+      <div className="section software-skills">
         <h2>Software skills</h2>
         <table className={`software-skills`}>
           {!mobileLayout ? (
@@ -133,8 +133,12 @@ const Skills = () => {
             </tbody>
           )}
         </table>
+        <p className="disclaimer">
+          *I&apos;m of course happy to learn and work with technologies not
+          listed here.
+        </p>
       </div>
-      <div className="other-skills">
+      <div className="section other-skills">
         <h2>Other skills</h2>
         <table className="languages">
           <caption>Languages</caption>
