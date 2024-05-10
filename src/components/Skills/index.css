@@ -1,9 +1,9 @@
 main.skills {
-  gap: 35px;
+  gap: 40px;
 
   h1 {
     align-self: center;
-    margin-bottom: -15px;
+    margin-bottom: -20px;
   }
 
   &>div {
@@ -120,7 +120,7 @@ main.skills {
       font-size: 0.95rem;
 
       @media only screen and (max-width: 768px) {
-        margin-top: -15px;
+        margin-top: -20px;
       }
     }
   }
