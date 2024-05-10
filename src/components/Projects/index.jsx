@@ -124,8 +124,8 @@ const Projects = () => {
         <div className="header">
           <h2 onClick={showAllProjects}>Learning projects</h2>
           <p>
-            Projects created earlier in my developer journey – they showcase my
-            growth and experimentation with a limited toolset.
+            Projects created earlier in my developer journey, showing my growth
+            and experimentation with a limited toolset.
           </p>
           <button onClick={toggleAllProjects}>
             <img
