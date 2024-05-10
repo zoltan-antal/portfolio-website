@@ -233,7 +233,7 @@ main.projects {
 
       &>h2 {
         grid-area: title;
-        user-select: none;
+        cursor: pointer;
       }
 
       &>p {

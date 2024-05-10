@@ -99,15 +99,15 @@ const Projects = () => {
     }, 25);
   };
 
-  const showAllProjects = (e) => {
-    setAllProjectsVisible(true);
-    setTimeout(() => {
-      e.target.scrollIntoView({
-        behavior: 'smooth',
-        block: 'start',
-      });
-    }, 25);
-  };
+  // const showAllProjects = (e) => {
+  //   setAllProjectsVisible(true);
+  //   setTimeout(() => {
+  //     e.target.scrollIntoView({
+  //       behavior: 'smooth',
+  //       block: 'start',
+  //     });
+  //   }, 25);
+  // };
 
   return (
     <main className="projects">
@@ -122,7 +122,7 @@ const Projects = () => {
       </div>
       <div id="learning-projects" className="collapsible">
         <div className="header">
-          <h2 onClick={showAllProjects}>Learning projects</h2>
+          <h2 onClick={toggleAllProjects}>Learning projects</h2>
           <p>
             Projects created earlier in my developer journey, showing my growth
             and experimentation with a limited toolset.
