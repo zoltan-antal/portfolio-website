@@ -74,6 +74,10 @@ html {
 #root {
   --scrollbar-width: 12px;
   --header-height: 40px;
+  --highlight-dark: #52525b;
+  --highlight-dark-hover: #3f3f46;
+  --highlight-light: #e4e4e7;
+  --highlight-light-hover: #d4d4d8;
 
   height: 100vh;
   height: 100dvh;
@@ -122,12 +126,12 @@ html {
       button {
         padding: 5px 10px;
         border: none;
-        background-color: grey;
+        background-color: var(--highlight-dark);
         color: white;
         font-size: 0.9rem;
 
         &:hover {
-          background-color: dimgrey;
+          background-color: var(--highlight-dark-hover);
         }
       }
     }

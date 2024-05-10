@@ -33,11 +33,11 @@ main.about {
         gap: 15px;
 
         button {
-          background-color: lightgrey;
+          background-color: var(--highlight-light);
           color: black;
 
           &:hover {
-            background-color: grey;
+            background-color: var(--highlight-light-hover);
           }
         }
       }

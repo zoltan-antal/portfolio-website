@@ -27,7 +27,7 @@ main.skills {
     thead {
       th {
         font-size: 1.2rem;
-        background-color: dimgrey;
+        background-color: var(--highlight-dark);
         color: white;
         padding: 5px 0;
       }
@@ -41,12 +41,12 @@ main.skills {
           text-align: center;
 
           &:not(:last-child) {
-            border-right: 1px solid lightgray;
+            border-right: 1px solid var(--highlight-light-hover);
           }
         }
 
         th {
-          background-color: lightgrey;
+          background-color: var(--highlight-light);
           padding: 5px 0;
           font-weight: normal;
         }
@@ -56,13 +56,13 @@ main.skills {
         tr {
           th {
             font-size: 1.2rem;
-            background-color: dimgrey;
+            background-color: var(--highlight-dark);
             color: white;
             font-weight: bold;
           }
 
           td:has(strong) {
-            background-color: lightgrey;
+            background-color: var(--highlight-light);
             padding: 5px 0;
 
             strong {

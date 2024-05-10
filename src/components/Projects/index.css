@@ -21,20 +21,6 @@ main.projects {
 
       &:nth-child(even) {
         flex-direction: row-reverse;
-
-        /* .info {
-          align-items: flex-end;
-
-          .technologies {
-            justify-content: flex-end;
-          }
-
-          .description {
-            p {
-              text-align: right;
-            }
-          }
-        } */
       }
 
       .screenshot {
@@ -94,7 +80,7 @@ main.projects {
               display: flex;
 
               img {
-                height: 1.4rem;
+                height: 1.35rem;
               }
             }
 
@@ -117,8 +103,8 @@ main.projects {
             gap: 6px;
 
             border: 1px solid black;
-            border-radius: 20px;
-            padding: 3px 10px;
+            border-radius: 30px;
+            padding: 3px 11px;
             background-color: white;
             color: black;
             font-size: 0.9rem;
@@ -159,15 +145,15 @@ main.projects {
             align-items: flex-end;
             gap: 5px;
 
-            padding: 4px;
-            border: 1px solid black;
+            padding: 5px 10px;
+            background-color: var(--highlight-light);
 
             img {
-              height: 1.4rem;
+              height: 1.2rem;
             }
 
             &:hover {
-              background-color: lightgray;
+              background-color: var(--highlight-light-hover);
             }
           }
         }
