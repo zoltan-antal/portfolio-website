@@ -27,16 +27,7 @@ const Footer = () => {
         </a>
       </div>
       <div id="footer-credit">
-        <pre>Built by </pre>
-        <a
-          className="link repo"
-          href={`${contactDetails.github}`}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Zoltan Antal
-        </a>
-        <pre> | </pre>
+        <pre>Built by Zoltan Antal | </pre>
         <a
           className="link repo"
           href={`${contactDetails.github}/portfolio-website`}

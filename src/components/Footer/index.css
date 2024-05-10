@@ -3,6 +3,7 @@ footer {
   flex-direction: column;
   justify-content: flex-end;
   align-items: center;
+  gap: 1px;
 
   padding: 7px 0 3px;
 
@@ -12,7 +13,15 @@ footer {
     justify-content: center;
     align-items: center;
 
-    font-size: 0.9rem;
+    font-size: 0.85rem;
+
+    a {
+      text-decoration: underline;
+
+      &:hover {
+        color: dimgrey;
+      }
+    }
 
     img {
       height: 1.2rem;
