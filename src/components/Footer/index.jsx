@@ -27,9 +27,18 @@ const Footer = () => {
         </a>
       </div>
       <div id="footer-credit">
-        <pre>Built by Zoltan Antal | </pre>
+        <pre>Built by </pre>
         <a
-          className="repo"
+          className="link repo"
+          href={`${contactDetails.github}`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Zoltan Antal
+        </a>
+        <pre> | </pre>
+        <a
+          className="link repo"
           href={`${contactDetails.github}/portfolio-website`}
           target="_blank"
           rel="noopener noreferrer"

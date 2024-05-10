@@ -17,7 +17,7 @@ const Contact = () => {
         <div className="contact-items">
           {/* Obfuscated email address */}
           <a
-            className="email"
+            className="link email"
             href={`mailto:${contactDetails.emailObfuscated}`}
           >
             {email.slice(0, (email.length / 3) * 1)}
@@ -32,7 +32,7 @@ const Contact = () => {
         <p>Or connect with me with on:</p>
         <div className="contact-items">
           <a
-            className="linkedin"
+            className="link linkedin"
             href={contactDetails.linkedin}
             target="_blank"
             rel="noopener noreferrer"
@@ -41,7 +41,7 @@ const Contact = () => {
             LinkedIn
           </a>
           <a
-            className="github"
+            className="link github"
             href={contactDetails.github}
             target="_blank"
             rel="noopener noreferrer"

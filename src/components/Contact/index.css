@@ -35,10 +35,6 @@ main.contact {
             display: none;
           }
         }
-
-        &:hover {
-          text-decoration: underline;
-        }
       }
     }
   }
