@@ -188,7 +188,9 @@ main.projects {
           }
 
           >img {
-            width: 100%;
+            max-height: calc(var(--screenshot-height) - 2px);
+            max-width: 100%;
+            z-index: -1;
           }
         }
       }
