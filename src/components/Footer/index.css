@@ -19,7 +19,7 @@ footer {
       text-decoration: underline;
 
       &:hover {
-        color: var(--highlight-dark-hover);
+        color: var(--text-hover);
       }
     }
 

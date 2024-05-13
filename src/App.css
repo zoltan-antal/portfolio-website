@@ -92,8 +92,9 @@ html {
 
   &:has(.light-theme) {
     --background: white;
-    --text: black;
     --border: black;
+    --text: black;
+    --text-hover: #52525b;
     --highlight-dark: #52525b;
     --highlight-dark-hover: #3f3f46;
     --highlight-dark-contrast: white;
@@ -106,9 +107,10 @@ html {
 
   &:has(.dark-theme) {
     --background: #18181b;
+    --border: var(--background);
     --background: #27272a;
     --text: white;
-    --border: var(--background);
+    --text-hover: #d4d4d8;
     --highlight-dark: #52525b;
     --highlight-dark-hover: #3f3f46;
     --highlight-dark-contrast: white;
