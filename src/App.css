@@ -72,6 +72,7 @@ html {
 }
 
 #root {
+  --background: white;
   --scrollbar-width: 12px;
   --header-height: 40px;
   --highlight-dark: #52525b;
@@ -81,6 +82,8 @@ html {
 
   height: 100vh;
   height: 100dvh;
+  background-color: var(--background);
+
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
