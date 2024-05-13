@@ -42,7 +42,7 @@ main.skills {
           text-align: center;
 
           &:not(:last-child) {
-            border-right: 1px solid var(--highlight-light-hover);
+            border-right: 1px solid var(--highlight-medium);
           }
         }
 
