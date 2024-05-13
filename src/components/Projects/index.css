@@ -85,6 +85,11 @@ main.projects {
               }
             }
 
+            &.invert {
+              img {
+                filter: invert(1);
+              }
+            }
           }
         }
 
@@ -239,6 +244,10 @@ main.projects {
 
         &>img {
           height: 2.4rem;
+
+          &.invert {
+            filter: invert(1);
+          }
         }
       }
     }

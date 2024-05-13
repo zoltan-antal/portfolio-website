@@ -1,9 +1,12 @@
 import './index.css';
+import { useOutletContext } from 'react-router-dom';
 import contactDetails from '../../constants/contactDetails';
 import linkedinIcon from '../../assets/images/icons/technologies/linkedin.svg';
 import githubIcon from '../../assets/images/icons/technologies/github.svg';
+import githubIconDark from '../../assets/images/icons/technologies/github-dark.svg';
 
 const Contact = () => {
+  const { darkMode } = useOutletContext();
   const email = contactDetails.email;
 
   return (
@@ -46,7 +49,10 @@ const Contact = () => {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <img src={githubIcon} alt="GitHub logo" />
+            <img
+              src={!darkMode ? githubIcon : githubIconDark}
+              alt="GitHub logo"
+            />
             GitHub
           </a>
         </div>

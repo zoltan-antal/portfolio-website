@@ -1,6 +1,7 @@
 import './index.css';
 
 import { useState } from 'react';
+import { useOutletContext } from 'react-router-dom';
 
 import projects from '../../constants/projects';
 import technologies from '../../constants/technologies';
@@ -16,6 +17,7 @@ import expandIcon from '../../assets/images/icons/chevron-down.svg';
 import collapseIcon from '../../assets/images/icons/chevron-up.svg';
 
 const Projects = () => {
+  const { darkMode } = useOutletContext();
   const [allProjectsVisible, setAllProjectsVisible] = useState(false);
 
   const renderProject = (project) => {
@@ -33,7 +35,7 @@ const Projects = () => {
             <h3 className="name">
               {project.name + (project.wip ? '\n– WORK IN PROGRESS' : '')}
             </h3>
-            <div className="feature-icons">
+            <div className={`feature-icons${darkMode ? ' invert' : ''}`}>
               {project.desktop && (
                 <div data-tooltip="Desktop layout">
                   <img src={desktopIcon} alt="desktop-layout" />
@@ -129,6 +131,7 @@ const Projects = () => {
           </p>
           <button onClick={toggleAllProjects}>
             <img
+              className={darkMode ? 'invert' : ''}
               src={allProjectsVisible ? collapseIcon : expandIcon}
               alt={allProjectsVisible ? 'hide' : 'show'}
             />

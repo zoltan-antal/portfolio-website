@@ -3,13 +3,18 @@ import contactDetails from '../../constants/contactDetails.js';
 import emailIcon from '../../assets/images/icons/email.svg';
 import linkedinIcon from '../../assets/images/icons/technologies/linkedin.svg';
 import githubIcon from '../../assets/images/icons/technologies/github.svg';
+import githubIconDark from '../../assets/images/icons/technologies/github-dark.svg';
 
-const Footer = () => {
+const Footer = ({ darkMode }) => {
   return (
     <footer>
       <div id="footer-contact">
         <a href={`mailto:${contactDetails.emailObfuscated}`}>
-          <img src={emailIcon} alt="email" />
+          <img
+            className={darkMode ? 'invert' : ''}
+            src={emailIcon}
+            alt="email"
+          />
         </a>
         <a
           href={contactDetails.linkedin}
@@ -23,7 +28,7 @@ const Footer = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <img src={githubIcon} alt="GitHub" />
+          <img src={!darkMode ? githubIcon : githubIconDark} alt="GitHub" />
         </a>
       </div>
       <div id="footer-credit">

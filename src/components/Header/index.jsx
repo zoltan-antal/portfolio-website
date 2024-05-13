@@ -1,8 +1,10 @@
 import './index.css';
 import { useState, useEffect } from 'react';
 import Nav from './Nav';
+import lightModeIcon from '../../assets/images/icons/sun.svg';
+import darkModeIcon from '../../assets/images/icons/moon.svg';
 
-const Header = () => {
+const Header = ({ darkMode, setDarkMode }) => {
   const mobileLayout =
     /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
@@ -52,7 +54,27 @@ const Header = () => {
   }, [mobileLayout]);
 
   return (
-    <header className={`${headerFixed ? 'fixed' : ''}`}>
+    <header
+      className={`${headerFixed ? 'fixed' : ''} ${
+        darkMode ? 'dark-theme' : 'light-theme'
+      }`}
+    >
+      {!mobileLayout && (
+        <button
+          id="dark-mode-button"
+          data-tooltip={`${darkMode ? 'Light' : 'Dark'} mode`}
+          onClick={() => {
+            setDarkMode((val) => !val);
+            localStorage.setItem(
+              'ZoltanAntalDarkMode',
+              JSON.stringify(!darkMode)
+            );
+          }}
+        >
+          {darkMode && <img src={lightModeIcon} alt="light mode" />}
+          {!darkMode && <img src={darkModeIcon} alt="dark mode" />}
+        </button>
+      )}
       <Nav></Nav>
     </header>
   );

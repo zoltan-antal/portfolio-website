@@ -78,18 +78,6 @@ html {
   --scrollbar-width: 12px;
   --header-height: 40px;
 
-  --background: white;
-  --text: black;
-  --border: black;
-  --highlight-dark: #52525b;
-  --highlight-dark-hover: #3f3f46;
-  --highlight-dark-contrast: white;
-  --highlight-medium: #a1a1aa;
-  --highlight-medium-hover: #71717a;
-  --highlight-light: #e4e4e7;
-  --highlight-light-hover: #d4d4d8;
-  --highlight-light-contrast: black;
-
   height: 100vh;
   height: 100dvh;
   background-color: var(--background);
@@ -101,6 +89,35 @@ html {
 
   overflow-y: scroll;
   overflow-x: hidden;
+
+  &:has(.light-theme) {
+    --background: white;
+    --text: black;
+    --border: black;
+    --highlight-dark: #52525b;
+    --highlight-dark-hover: #3f3f46;
+    --highlight-dark-contrast: white;
+    --highlight-medium: #a1a1aa;
+    --highlight-medium-hover: #71717a;
+    --highlight-light: #e4e4e7;
+    --highlight-light-hover: #d4d4d8;
+    --highlight-light-contrast: black;
+  }
+
+  &:has(.dark-theme) {
+    --background: #18181b;
+    --background: #27272a;
+    --text: white;
+    --border: var(--background);
+    --highlight-dark: #52525b;
+    --highlight-dark-hover: #3f3f46;
+    --highlight-dark-contrast: white;
+    --highlight-medium: #a1a1aa;
+    --highlight-medium-hover: #71717a;
+    --highlight-light: #e4e4e7;
+    --highlight-light-hover: #d4d4d8;
+    --highlight-light-contrast: black;
+  }
 
   main {
     flex-grow: 1;
@@ -208,7 +225,15 @@ html {
 
   @media only screen and not (max-width: 768px) {
     &:hover::after {
-      transform: translate(-50%, 110%) scale(1);
+      transform: translateX(-50%) translateY(110%) scale(1);
     }
+  }
+}
+
+/* Dummy settings to make dark theme extensions detect dark theme */
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #000000;
+    color: #ffffff;
   }
 }

@@ -1,4 +1,8 @@
 .animated-word-display {
+  .word {
+    color: var(--text);
+  }
+
   .caret.blinking {
     animation: blink-caret var(--blink-duration) step-end infinite;
   }

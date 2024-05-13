@@ -14,6 +14,10 @@ header {
     z-index: 1000;
     background-color: var(--background);
 
+    &:has(#dark-mode-button) {
+      padding-left: calc(var(--header-padding) + var(--scrollbar-width));
+    }
+
     @media only screen and not (max-width: 768px) {
       @supports selector(::-webkit-scrollbar) {
         right: var(--scrollbar-width);
@@ -22,7 +26,35 @@ header {
   }
 
   @media only screen and (max-width: 768px) {
-    grid-template-columns: 1fr;
-    grid-template-areas: 'nav';
+    justify-content: center;
+  }
+
+  &:has(#dark-mode-button) {
+    justify-content: space-between;
+  }
+
+  #dark-mode-button {
+    background-color: var(--background);
+    border: none;
+
+    img {
+      height: 100%;
+    }
+
+    &[data-tooltip] {
+      @media only screen and not (max-width: 768px) {
+        &:hover::after {
+          transform: translateX(-15%) translateY(120%) scale(1);
+        }
+      }
+    }
+  }
+
+  &.dark-theme {
+    #dark-mode-button {
+      img {
+        filter: invert(1);
+      }
+    }
   }
 }

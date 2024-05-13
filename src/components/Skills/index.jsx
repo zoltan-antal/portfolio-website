@@ -1,4 +1,5 @@
 import './index.css';
+import { useOutletContext } from 'react-router-dom';
 import technologies from '../../constants/technologies';
 import softwareSkills from '../../constants/softwareSkills';
 import languageSkills from '../../constants/languageSkills';
@@ -8,6 +9,7 @@ const Skills = () => {
     /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
       navigator.userAgent
     );
+  const { darkMode } = useOutletContext();
 
   const renderTechnologyGroup = (category, familiarity) => {
     return (
@@ -24,7 +26,11 @@ const Skills = () => {
               <div key={skill.technology} className="technology">
                 <img
                   className="logo"
-                  src={technology.icon}
+                  src={
+                    !darkMode
+                      ? technology.icon
+                      : technology.iconDark || technology.icon
+                  }
                   alt={`${technology.name} logo`}
                 />
                 <span className="name">
