@@ -41,8 +41,11 @@ h5,
 h6,
 li,
 a,
-label {
-  color: black;
+label,
+td,
+th,
+caption {
+  color: var(--text);
 }
 
 a.link {
@@ -72,13 +75,20 @@ html {
 }
 
 #root {
-  --background: white;
   --scrollbar-width: 12px;
   --header-height: 40px;
+
+  --background: white;
+  --text: black;
+  --border: black;
   --highlight-dark: #52525b;
   --highlight-dark-hover: #3f3f46;
+  --highlight-dark-contrast: white;
+  --highlight-medium: #a1a1aa;
+  --highlight-medium-hover: #71717a;
   --highlight-light: #e4e4e7;
   --highlight-light-hover: #d4d4d8;
+  --highlight-light-contrast: black;
 
   height: 100vh;
   height: 100dvh;
@@ -130,7 +140,7 @@ html {
         padding: 5px 10px;
         border: none;
         background-color: var(--highlight-dark);
-        color: white;
+        color: var(--highlight-dark-contrast);
         font-size: 0.9rem;
 
         &:hover {
@@ -150,16 +160,16 @@ html {
     }
 
     ::-webkit-scrollbar-track {
-      background: white;
+      background: var(--background);
     }
 
     ::-webkit-scrollbar-thumb {
-      background-color: #c1c1c1;
+      background-color: var(--highlight-medium);
       border-radius: 0px;
     }
 
     ::-webkit-scrollbar-thumb:hover {
-      background: #a9a9a9;
+      background: var(--highlight-medium-hover);
     }
   }
 
@@ -167,7 +177,7 @@ html {
   @supports not selector(::-webkit-scrollbar) {
     * {
       scrollbar-width: auto;
-      scrollbar-color: #c1c1c1 white;
+      scrollbar-color: var(--highlight-medium) var(--background);
     }
   }
 }

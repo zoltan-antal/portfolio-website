@@ -29,7 +29,7 @@ main.skills {
       th {
         font-size: 1.2rem;
         background-color: var(--highlight-dark);
-        color: white;
+        color: var(--highlight-dark-contrast);
         padding: 5px 0;
       }
     }
@@ -58,7 +58,7 @@ main.skills {
           th {
             font-size: 1.2rem;
             background-color: var(--highlight-dark);
-            color: white;
+            color: var(--highlight-dark-contrast);
             font-weight: bold;
           }
 
@@ -137,7 +137,7 @@ main.skills {
           font-size: 1rem;
 
           &:not(:last-child) {
-            border-right: 1px solid white;
+            border-right: 1px solid var(--background);
           }
         }
 

@@ -31,7 +31,7 @@ main.projects {
         justify-content: center;
         align-items: center;
 
-        border: 1px solid black;
+        border: 1px solid var(--border);
         --screenshot-height: 270px;
         height: var(--screenshot-height);
 
@@ -102,7 +102,7 @@ main.projects {
             align-items: center;
             gap: 6px;
 
-            border: 1px solid black;
+            border: 1px solid var(--border);
             border-radius: 30px;
             padding: 3px 11px;
             background-color: white;
@@ -216,7 +216,7 @@ main.projects {
 
       &:has(+ .content.hidden) {
         padding-bottom: 10px;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid var(--text);
       }
 
       &>h2 {

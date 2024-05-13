@@ -12,6 +12,6 @@
   }
 
   50% {
-    color: black;
+    color: var(--text);
   }
 }

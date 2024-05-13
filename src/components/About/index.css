@@ -34,7 +34,7 @@ main.about {
 
         button {
           background-color: var(--highlight-light);
-          color: black;
+          color: var(--highlight-light-contrast);
 
           &:hover {
             background-color: var(--highlight-light-hover);
@@ -45,7 +45,7 @@ main.about {
 
     .photo {
       height: 250px;
-      border: 1px solid black;
+      border: 1px solid var(--border);
     }
   }
 }
