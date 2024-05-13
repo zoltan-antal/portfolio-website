@@ -101,16 +101,6 @@ const Projects = () => {
     }, 25);
   };
 
-  // const showAllProjects = (e) => {
-  //   setAllProjectsVisible(true);
-  //   setTimeout(() => {
-  //     e.target.scrollIntoView({
-  //       behavior: 'smooth',
-  //       block: 'start',
-  //     });
-  //   }, 25);
-  // };
-
   return (
     <main className="projects">
       <h1>My Projects</h1>
