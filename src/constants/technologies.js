@@ -39,6 +39,7 @@ import pythonIcon from '../assets/images/icons/technologies/python.svg';
 import racketIcon from '../assets/images/icons/technologies/racket.svg';
 import reactIcon from '../assets/images/icons/technologies/react.svg';
 import reactrouterIcon from '../assets/images/icons/technologies/reactrouter.svg';
+import reactrouterIconDark from '../assets/images/icons/technologies/reactrouter-dark.svg';
 import reduxIcon from '../assets/images/icons/technologies/redux.svg';
 import rubyIcon from '../assets/images/icons/technologies/ruby.svg';
 import sqlIcon from '../assets/images/icons/technologies/sql.png';
@@ -230,7 +231,7 @@ const technologies = {
   reactrouter: {
     name: 'React Router',
     icon: reactrouterIcon,
-    iconDark: false,
+    iconDark: reactrouterIconDark,
   },
   redux: {
     name: 'Redux',
