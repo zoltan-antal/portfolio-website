@@ -1,24 +1,23 @@
 import apolloIcon from '../assets/images/icons/technologies/apollo.png';
 import axiosIcon from '../assets/images/icons/technologies/axios.svg';
 import bashIcon from '../assets/images/icons/technologies/bash.svg';
+import bashIconDark from '../assets/images/icons/technologies/bash-dark.svg';
 import bootstrapIcon from '../assets/images/icons/technologies/bootstrap.svg';
 import cIcon from '../assets/images/icons/technologies/c.svg';
-import cIconTransparent from '../assets/images/icons/technologies/c-transparent.svg';
 import csharpIcon from '../assets/images/icons/technologies/csharp.svg';
-import csharpIconTransparent from '../assets/images/icons/technologies/csharp-transparent.svg';
 import cssIcon from '../assets/images/icons/technologies/css.svg';
-import cssIconTransparent from '../assets/images/icons/technologies/css-transparent.svg';
 import cypressIcon from '../assets/images/icons/technologies/cypress.svg';
+import cypressIconDark from '../assets/images/icons/technologies/cypress-dark.svg';
 import dockerIcon from '../assets/images/icons/technologies/docker.svg';
 import eslintIcon from '../assets/images/icons/technologies/eslint.svg';
-import expressIcon from '../assets/images/icons/technologies/express.png';
-import expressIconTransparent from '../assets/images/icons/technologies/express-transparent.svg';
+import expressIcon from '../assets/images/icons/technologies/express.svg';
+import expressIconDark from '../assets/images/icons/technologies/express-dark.svg';
 import gitIcon from '../assets/images/icons/technologies/git.svg';
 import githubIcon from '../assets/images/icons/technologies/github.svg';
+import githubIconDark from '../assets/images/icons/technologies/github-dark.svg';
 import githubactionsIcon from '../assets/images/icons/technologies/githubactions.svg';
 import graphqlIcon from '../assets/images/icons/technologies/graphql.svg';
 import htmlIcon from '../assets/images/icons/technologies/html.svg';
-import htmlIconTransparent from '../assets/images/icons/technologies/html-transparent.svg';
 import javaIcon from '../assets/images/icons/technologies/java.svg';
 import javascriptIcon from '../assets/images/icons/technologies/javascript.svg';
 import jestIcon from '../assets/images/icons/technologies/jest.svg';
@@ -31,12 +30,10 @@ import matlabIcon from '../assets/images/icons/technologies/matlab.png';
 import mongodbIcon from '../assets/images/icons/technologies/mongodb.svg';
 import mongooseIcon from '../assets/images/icons/technologies/mongoose.svg';
 import nodejsIcon from '../assets/images/icons/technologies/nodejs.svg';
-import nodejsIconTransparent from '../assets/images/icons/technologies/nodejs-transparent.svg';
 import npmIcon from '../assets/images/icons/technologies/npm.svg';
-import passportjsIcon from '../assets/images/icons/technologies/passportjs.png';
-import passportjsIconTransparent from '../assets/images/icons/technologies/passportjs-transparent.svg';
+import passportjsIcon from '../assets/images/icons/technologies/passportjs.svg';
+import passportjsIconDark from '../assets/images/icons/technologies/passportjs-dark.svg';
 import postgresqlIcon from '../assets/images/icons/technologies/postgresql.svg';
-import postgresqlIconTransparent from '../assets/images/icons/technologies/postgresql-transparent.svg';
 import postmanIcon from '../assets/images/icons/technologies/postman.svg';
 import pythonIcon from '../assets/images/icons/technologies/python.svg';
 import racketIcon from '../assets/images/icons/technologies/racket.svg';
@@ -49,7 +46,6 @@ import tanstackqueryIcon from '../assets/images/icons/technologies/tanstackquery
 import typescriptIcon from '../assets/images/icons/technologies/typescript.svg';
 import ubuntuIcon from '../assets/images/icons/technologies/ubuntu.svg';
 import visualbasicIcon from '../assets/images/icons/technologies/visualbasic.svg';
-import visualbasicIconTransparent from '../assets/images/icons/technologies/visualbasic-transparent.svg';
 import viteIcon from '../assets/images/icons/technologies/vite.svg';
 import vscodeIcon from '../assets/images/icons/technologies/vscode.svg';
 import webpackIcon from '../assets/images/icons/technologies/webpack.svg';
@@ -59,237 +55,237 @@ const technologies = {
   apollo: {
     name: 'Apollo',
     icon: apolloIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   axios: {
     name: 'Axios',
     icon: axiosIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   bash: {
     name: 'Bash',
     icon: bashIcon,
-    iconTransparent: false,
+    iconDark: bashIconDark,
   },
   bootstrap: {
     name: 'Bootstrap',
     icon: bootstrapIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   c: {
     name: 'C',
     icon: cIcon,
-    iconTransparent: cIconTransparent,
+    iconDark: false,
   },
   csharp: {
     name: 'C#',
     icon: csharpIcon,
-    iconTransparent: csharpIconTransparent,
+    iconDark: false,
   },
   css: {
     name: 'CSS',
     icon: cssIcon,
-    iconTransparent: cssIconTransparent,
+    iconDark: false,
   },
   cypress: {
     name: 'Cypress',
     icon: cypressIcon,
-    iconTransparent: false,
+    iconDark: cypressIconDark,
   },
   docker: {
     name: 'Docker',
     icon: dockerIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   eslint: {
     name: 'ESLint',
     icon: eslintIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   express: {
     name: 'Express.js',
     icon: expressIcon,
-    iconTransparent: expressIconTransparent,
+    iconDark: expressIconDark,
   },
   git: {
     name: 'Git',
     icon: gitIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   github: {
     name: 'GitHub',
     icon: githubIcon,
-    iconTransparent: false,
+    iconDark: githubIconDark,
   },
   githubactions: {
     name: 'GitHub Actions',
     icon: githubactionsIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   graphql: {
     name: 'GraphQL',
     icon: graphqlIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   html: {
     name: 'HTML',
     icon: htmlIcon,
-    iconTransparent: htmlIconTransparent,
+    iconDark: false,
   },
   java: {
     name: 'Java',
     icon: javaIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   javascript: {
     name: 'JavaScript',
     icon: javascriptIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   jest: {
     name: 'Jest',
     icon: jestIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   jwt: {
     name: 'JWT',
     icon: jwtIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   kubuntu: {
     name: 'Kubuntu',
     icon: kubuntuIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   linux: {
     name: 'Linux',
     icon: linuxIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   lodash: {
     name: 'Lodash',
     icon: lodashIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   materialui: {
     name: 'Material UI',
     icon: materialuiIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   matlab: {
     name: 'Matlab',
     icon: matlabIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   mongodb: {
     name: 'MongoDB',
     icon: mongodbIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   mongoose: {
     name: 'Mongoose',
     icon: mongooseIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   nodejs: {
     name: 'Node.js',
     icon: nodejsIcon,
-    iconTransparent: nodejsIconTransparent,
+    iconDark: false,
   },
   npm: {
     name: 'npm',
     icon: npmIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   passportjs: {
     name: 'Passport.js',
     icon: passportjsIcon,
-    iconTransparent: passportjsIconTransparent,
+    iconDark: passportjsIconDark,
   },
   postgresql: {
     name: 'PostgreSQL',
     icon: postgresqlIcon,
-    iconTransparent: postgresqlIconTransparent,
+    iconDark: false,
   },
   postman: {
     name: 'Postman',
     icon: postmanIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   python: {
     name: 'Python',
     icon: pythonIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   racket: {
     name: 'Racket',
     icon: racketIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   react: {
     name: 'React',
     icon: reactIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   reactrouter: {
     name: 'React Router',
     icon: reactrouterIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   redux: {
     name: 'Redux',
     icon: reduxIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   ruby: {
     name: 'Ruby',
     icon: rubyIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   sql: {
     name: 'SQL',
     icon: sqlIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   tanstackquery: {
     name: 'TanStack Query',
     icon: tanstackqueryIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   typescript: {
     name: 'TypeScript',
     icon: typescriptIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   ubuntu: {
     name: 'Ubuntu',
     icon: ubuntuIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   visualbasic: {
     name: 'Visual Basic',
     icon: visualbasicIcon,
-    iconTransparent: visualbasicIconTransparent,
+    iconDark: false,
   },
   vite: {
     name: 'Vite',
     icon: viteIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   vscode: {
     name: 'VS\u00A0Code',
     icon: vscodeIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   webpack: {
     name: 'Webpack',
     icon: webpackIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
   windows: {
     name: 'Windows',
     icon: windowsIcon,
-    iconTransparent: false,
+    iconDark: false,
   },
 };
 
