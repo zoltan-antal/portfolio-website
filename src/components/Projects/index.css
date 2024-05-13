@@ -32,6 +32,7 @@ main.projects {
         align-items: center;
 
         border: 1px solid var(--border);
+        background-color: white;
         --screenshot-height: 270px;
         height: var(--screenshot-height);
 
@@ -147,6 +148,7 @@ main.projects {
 
             padding: 5px 10px;
             background-color: var(--highlight-light);
+            color: var(--highlight-light-contrast);
 
             img {
               height: 1.2rem;

@@ -48,6 +48,7 @@ main.skills {
 
         th {
           background-color: var(--highlight-light);
+          color: var(--highlight-light-contrast);
           padding: 5px 0;
           font-weight: normal;
         }
@@ -64,6 +65,7 @@ main.skills {
 
           td:has(strong) {
             background-color: var(--highlight-light);
+            color: var(--highlight-light-contrast);
             padding: 5px 0;
 
             strong {

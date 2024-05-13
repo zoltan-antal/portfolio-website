@@ -46,6 +46,7 @@ main.about {
     .photo {
       height: 250px;
       border: 1px solid var(--border);
+      background-color: white;
     }
   }
 }
