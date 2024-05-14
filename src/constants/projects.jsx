@@ -86,12 +86,12 @@ const projects = [
           An upcoming web app designed to be a solution for household consumable
           inventory management. From groceries to toiletries, this app aims to
           streamline inventory tracking and shopping trips. Features include
-          barcode scanning or manual entry for inventory updates, predictive
-          shopping list generation based on consumption patterns, customisable
-          categorisation and labelling options, and household collaboration.
-          With this tool, users can efficiently track their household items,
-          simplify their shopping experience, and avoid running out of
-          essentials.
+          barcode scanning for inventory updates, expiry date tracking,
+          predictive shopping list generation based on consumption patterns,
+          customisable categorisation and labelling options, and household
+          collaboration. With this tool, users can efficiently track their
+          household items, simplify their shopping experience, avoid running out
+          of essentials, and prevent food waste.
         </p>
       </>
     ),
