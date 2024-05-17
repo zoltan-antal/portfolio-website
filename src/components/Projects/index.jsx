@@ -63,7 +63,10 @@ const Projects = () => {
               <div key={technology}>
                 {technologies[technology].name}{' '}
                 <img
-                  src={technologies[technology].icon}
+                  src={
+                    (darkMode ? technologies[technology].iconDark : false) ||
+                    technologies[technology].icon
+                  }
                   alt={`${technologies[technology].name} logo`}
                 />
               </div>

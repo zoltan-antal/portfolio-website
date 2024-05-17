@@ -106,18 +106,17 @@ html {
   }
 
   &:has(.dark-theme) {
-    --background: #18181b;
-    --border: var(--background);
     --background: #27272a;
+    --border: var(--background);
     --text: white;
     --text-hover: #d4d4d8;
-    --highlight-dark: #52525b;
-    --highlight-dark-hover: #3f3f46;
+    --highlight-dark: #71717a;
+    --highlight-dark-hover: #52525b;
     --highlight-dark-contrast: white;
     --highlight-medium: #a1a1aa;
     --highlight-medium-hover: #71717a;
     --highlight-light: #e4e4e7;
-    --highlight-light-hover: #d4d4d8;
+    --highlight-light-hover: #bbbbc1;
     --highlight-light-contrast: black;
   }
 
