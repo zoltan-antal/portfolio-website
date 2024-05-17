@@ -10,7 +10,7 @@ const Home = () => {
         words={['Software developer', 'Problem solver', 'Engineer']}
       />
       <p className="introduction">
-        I&apos;m a full-stack software developer specialising in web
+        I&apos;m a software developer specialising in full-stack web
         development, based in Berkshire, UK.
       </p>
       <div className="button-group">
