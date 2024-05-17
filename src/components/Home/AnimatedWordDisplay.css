@@ -3,8 +3,12 @@
     color: var(--text);
   }
 
-  .caret.blinking {
-    animation: blink-caret var(--blink-duration) step-end infinite;
+  .caret {
+    color: var(--text);
+
+    &.blinking {
+      animation: blink-caret var(--blink-duration) step-end infinite;
+    }
   }
 }
 
