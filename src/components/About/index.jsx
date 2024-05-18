@@ -1,6 +1,6 @@
 import './index.css';
 import { Link } from 'react-router-dom';
-import wipIcon from '../../assets/images/icons/wip.svg';
+import profilePicture from '../../assets/images/photos/profile-picture.jpg';
 import cv from '../../assets/files/Zoltan_Antal-CV.pdf';
 import aboutMe from '../../constants/aboutMe';
 
@@ -32,7 +32,7 @@ const About = () => {
             <button onClick={downloadCV}>Download my CV</button>
           </div>
         </div>
-        <img className="photo" src={wipIcon} alt="Portrait" />
+        <img className="photo" src={profilePicture} alt="Portrait" />
       </div>
       <div className="button-group">
         <Link to="/projects">

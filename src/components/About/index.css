@@ -44,9 +44,8 @@ main.about {
     }
 
     .photo {
-      height: 250px;
+      height: min(300px, 65vw);
       border: 1px solid var(--border);
-      background-color: white;
     }
   }
 }
