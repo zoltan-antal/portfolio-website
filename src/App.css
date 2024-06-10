@@ -81,6 +81,8 @@ html {
   height: 100vh;
   height: 100dvh;
   background-color: var(--background);
+  background-image: radial-gradient(var(--background-pattern) 1px, transparent 1px);
+  background-size: 25px 25px;
 
   display: flex;
   flex-direction: column;
@@ -92,6 +94,7 @@ html {
 
   &:has(.light-theme) {
     --background: white;
+    --background-pattern: #e0e0e3;
     --border: black;
     --text: black;
     --text-hover: #52525b;
@@ -107,6 +110,7 @@ html {
 
   &:has(.dark-theme) {
     --background: #27272a;
+    --background-pattern: #3a3a3d;
     --border: var(--background);
     --text: white;
     --text-hover: #d4d4d8;
