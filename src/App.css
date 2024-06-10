@@ -95,7 +95,7 @@ html {
   &:has(.light-theme) {
     --background: white;
     --background-pattern: #dfdfe2;
-    --border: black;
+    --border: #a1a1aa;
     --text: black;
     --text-hover: #52525b;
     --highlight-dark: #52525b;
