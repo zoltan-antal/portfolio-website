@@ -34,7 +34,7 @@ header {
   }
 
   #dark-mode-button {
-    background-color: var(--background);
+    background-color: transparent;
     border: none;
 
     img {
