@@ -82,7 +82,6 @@ html {
   height: 100dvh;
   background-color: var(--background);
   background-image: radial-gradient(var(--background-pattern) 1px, transparent 1px);
-  /* background-size: 28px 28px; */
 
   display: flex;
   flex-direction: column;
