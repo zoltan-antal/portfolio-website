@@ -46,6 +46,7 @@ td,
 th,
 caption {
   color: var(--text);
+  background-color: var(--background);
 }
 
 a.link {
