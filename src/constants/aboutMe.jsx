@@ -15,8 +15,8 @@ const aboutMe = (
       algorithms & data structures, computer architecture, programming
       languages, and other key subjects, offered by Harvard, MIT and other
       renowned universities. In 2023, I chose to specialise in full-stack web
-      development, completing the University of Helsinki&apos;s Full Stack Open
-      programme and immersing myself in JavaScript and various backend, frontend
+      development, completing the Full Stack Open programme of the University of
+      Helsinki and immersing myself in JavaScript and various backend, frontend
       and database technologies.
     </p>
     <p>
