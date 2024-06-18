@@ -10,7 +10,7 @@ const aboutMe = (
       developer.
     </p>
     <p>
-      In 2022, I began studying full-time following the computer science
+      In 2022, I began studying full-time, following the computer science
       curriculum of the Open Source Society University. This included courses in
       algorithms & data structures, computer architecture, programming
       languages, and other key subjects, offered by Harvard, MIT and other
