@@ -5,10 +5,10 @@ import cv from '../../assets/files/Zoltan_Antal-CV.pdf';
 import aboutMe from '../../constants/aboutMe';
 
 const About = () => {
-  const mobileLayout =
-    /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
-      navigator.userAgent
-    );
+  // const mobileLayout =
+  //   /Mobi|Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+  //     navigator.userAgent
+  //   );
 
   const downloadCV = () => {
     const cvDownloadLink = document.createElement('a');
@@ -17,9 +17,9 @@ const About = () => {
     cvDownloadLink.click();
   };
 
-  const viewCV = () => {
-    window.open(cv, '_blank', 'noopener,noreferrer');
-  };
+  // const viewCV = () => {
+  //   window.open(cv, '_blank', 'noopener,noreferrer');
+  // };
 
   return (
     <main className="about">
@@ -28,7 +28,7 @@ const About = () => {
         <div className="introduction">
           {aboutMe}
           <div className="button-group" id="cv-buttons">
-            {!mobileLayout && <button onClick={viewCV}>View my CV</button>}
+            {/* {!mobileLayout && <button onClick={viewCV}>View my CV</button>} */}
             <button onClick={downloadCV}>Download my CV</button>
           </div>
         </div>
