@@ -19,6 +19,7 @@ main.skills {
     width: 100%;
     table-layout: fixed;
     background-color: var(--background);
+    border-collapse: collapse;
 
     caption {
       font-weight: bold;
@@ -30,6 +31,14 @@ main.skills {
       tr {
         height: 100%;
 
+        &:not(:first-child) {
+
+          &:has(strong),
+          &:has(th) {
+            border-top: 2px solid var(--background);
+          }
+        }
+
         th {
           padding: 5px 0;
           font-size: 1.2rem;
@@ -39,17 +48,18 @@ main.skills {
 
         td {
           text-align: center;
+          border-color: var(--highlight-medium);
+          border-width: 1px;
 
-          &:not(:has(strong)) {
-            &:not(:last-child) {
-              border-right: 1px solid var(--highlight-medium);
-            }
+          &:not(:last-child) {
+            border-right-style: solid;
           }
 
           &:has(strong) {
             padding: 5px 0;
             background-color: var(--highlight-light);
             color: var(--highlight-light-contrast);
+            border-color: var(--background);
 
             strong {
               font-weight: normal;
