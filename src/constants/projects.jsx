@@ -25,7 +25,7 @@ const projects = [
           A web app offering interactive visualisations of popular sorting
           algorithms. Users can observe the sorting process in real-time, adjust
           the flow of the visualisation with interactive control buttons, and
-          customise the input data. It serves as an handy learning tool for
+          customise the input data. It serves as a handy learning tool for
           understanding algorithmic concepts.
         </p>
       </>
