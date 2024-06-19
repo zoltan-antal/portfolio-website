@@ -8,8 +8,9 @@ const App = () => {
   const [darkMode, setDarkMode] = useState(
     localStorage.getItem('ZoltanAntalDarkMode') !== null
       ? JSON.parse(localStorage.getItem('ZoltanAntalDarkMode'))
-      : window.matchMedia &&
-          window.matchMedia('(prefers-color-scheme: dark)').matches
+      : true
+    // : window.matchMedia &&
+    //     window.matchMedia('(prefers-color-scheme: dark)').matches
   );
 
   const { pathname } = useLocation();
