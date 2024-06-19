@@ -33,6 +33,7 @@
 
 p,
 pre,
+span,
 h1,
 h2,
 h3,
@@ -94,7 +95,7 @@ html {
 
   &:has(.light-theme) {
     --background: white;
-    --background-pattern: #dfdfe2;
+    --background-pattern: #d0d0d4;
     --border: #a1a1aa;
     --text: black;
     --text-hover: #52525b;
@@ -111,7 +112,7 @@ html {
 
   &:has(.dark-theme) {
     --background: #27272a;
-    --background-pattern: #46464c;
+    --background-pattern: #4c4c54;
     --border: var(--background);
     --text: white;
     --text-hover: #d4d4d8;
