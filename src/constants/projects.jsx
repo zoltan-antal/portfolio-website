@@ -22,11 +22,11 @@ const projects = [
     description: (
       <>
         <p>
-          A web app offering interactive visualisations of popular sorting
-          algorithms. Users can observe the sorting process in real-time, adjust
-          the flow of the visualisation with interactive control buttons, and
-          customise the input data. It serves as a handy learning tool for
-          understanding algorithmic concepts.
+          An open-source web app offering interactive visualisations of popular
+          sorting algorithms. Users can observe the sorting process in
+          real-time, adjust the flow of the visualisation with interactive
+          control buttons, and customise the input data. It serves as a handy
+          learning tool for understanding algorithmic concepts.
         </p>
       </>
     ),
@@ -46,12 +46,12 @@ const projects = [
     description: (
       <>
         <p>
-          A web app that simplifies the process of crafting and managing
-          professional CVs. It features an intuitive editor where users can
-          input their information to generate their CV in real-time. There are
-          options for duplicating or creating multiple CVs, allowing users to
-          tailor their CVs for various job applications. The app also supports
-          user accounts for accessing work from any device, making it a
+          An open-source web app that simplifies the process of crafting and
+          managing professional CVs. It features an intuitive editor where users
+          can input their information to generate their CV in real-time. There
+          are options for duplicating or creating multiple CVs, allowing users
+          to tailor their CVs for various job applications. The app also
+          supports user accounts for accessing work from any device, making it a
           convenient tool for jobseekers.
         </p>
       </>
@@ -83,15 +83,15 @@ const projects = [
     description: (
       <>
         <p>
-          An upcoming web app designed to be a solution for household consumable
-          inventory management. From groceries to toiletries, this app aims to
-          streamline inventory tracking and shopping trips. Features include
-          barcode scanning for inventory updates, expiry date tracking,
-          predictive shopping list generation based on consumption patterns,
-          customisable categorisation and labelling options, and household
-          collaboration. With this tool, users can efficiently track their
-          household items, simplify their shopping experience, avoid running out
-          of essentials, and prevent food waste.
+          An upcoming open-source web app designed to be a solution for
+          household consumable inventory management. From groceries to
+          toiletries, this app aims to streamline inventory tracking and
+          shopping trips. Features include barcode scanning for inventory
+          updates, expiry date tracking, predictive shopping list generation
+          based on consumption patterns, customisable categorisation and
+          labelling options, and household collaboration. With this tool, users
+          can efficiently track their household items, simplify their shopping
+          experience, avoid running out of essentials, and prevent food waste.
         </p>
       </>
     ),
