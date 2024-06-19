@@ -22,7 +22,7 @@ const aboutMe = (
     <p>
       In my free time I enjoy tackling coding challenges in Python, but beyond
       programming my hobbies include ballroom dancing, wildlife photography,
-      hiking, wood carving and playing board games & video games.
+      wood carving and playing board games.
     </p>
   </>
 );
