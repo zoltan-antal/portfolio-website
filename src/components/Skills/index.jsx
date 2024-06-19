@@ -51,16 +51,20 @@ const Skills = () => {
         <table className={`software-skills`}>
           {!mobileLayout ? (
             <>
-              <thead>
-                <tr>
-                  <th>Languages</th>
-                  <th>Frameworks</th>
-                  <th>Dev tools & Libraries</th>
-                </tr>
-              </thead>
               <tbody>
                 <tr>
                   <th colSpan={3}>Core competencies</th>
+                </tr>
+                <tr>
+                  <td>
+                    <strong>Languages</strong>
+                  </td>
+                  <td>
+                    <strong>Frameworks</strong>
+                  </td>
+                  <td>
+                    <strong>Dev tools & Libraries</strong>
+                  </td>
                 </tr>
                 <tr>
                   <td>{renderTechnologyGroup('languages', 'high')}</td>
@@ -71,6 +75,17 @@ const Skills = () => {
                   <th colSpan={3}>Familiar with</th>
                 </tr>
                 <tr>
+                  <td>
+                    <strong>Languages</strong>
+                  </td>
+                  <td>
+                    <strong>Frameworks</strong>
+                  </td>
+                  <td>
+                    <strong>Dev tools & Libraries</strong>
+                  </td>
+                </tr>
+                <tr>
                   <td>{renderTechnologyGroup('languages', 'low')}</td>
                   <td>{renderTechnologyGroup('frameworks', 'low')}</td>
                   <td>{renderTechnologyGroup('tools', 'low')}</td>
@@ -78,13 +93,13 @@ const Skills = () => {
               </tbody>
             </>
           ) : (
-            <tbody className="mobile">
+            <tbody>
               <tr>
-                <th>Languages</th>
+                <th>Core competencies</th>
               </tr>
               <tr>
                 <td>
-                  <strong>Core competencies</strong>
+                  <strong>Languages</strong>
                 </td>
               </tr>
               <tr>
@@ -92,18 +107,7 @@ const Skills = () => {
               </tr>
               <tr>
                 <td>
-                  <strong>Familiar with</strong>
-                </td>
-              </tr>
-              <tr>
-                <td>{renderTechnologyGroup('languages', 'low')}</td>
-              </tr>
-              <tr>
-                <th>Frameworks</th>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Core competencies</strong>
+                  <strong>Frameworks</strong>
                 </td>
               </tr>
               <tr>
@@ -111,26 +115,34 @@ const Skills = () => {
               </tr>
               <tr>
                 <td>
-                  <strong>Familiar with</strong>
-                </td>
-              </tr>
-              <tr>
-                <td>{renderTechnologyGroup('frameworks', 'low')}</td>
-              </tr>
-              <tr>
-                <th>Dev tools & Libraries</th>
-              </tr>
-              <tr>
-                <td>
-                  <strong>Core competencies</strong>
+                  <strong>Dev tools & Libraries</strong>
                 </td>
               </tr>
               <tr>
                 <td>{renderTechnologyGroup('tools', 'high')}</td>
               </tr>
               <tr>
+                <th>Familiar with</th>
+              </tr>
+              <tr>
                 <td>
-                  <strong>Familiar with</strong>
+                  <strong>Languages</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>{renderTechnologyGroup('languages', 'low')}</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Frameworks</strong>
+                </td>
+              </tr>
+              <tr>
+                <td>{renderTechnologyGroup('frameworks', 'low')}</td>
+              </tr>
+              <tr>
+                <td>
+                  <strong>Dev tools & Libraries</strong>
                 </td>
               </tr>
               <tr>
@@ -148,14 +160,12 @@ const Skills = () => {
         <h2>Other skills</h2>
         <table className="languages">
           <caption>Languages</caption>
-          <thead>
+          <tbody>
             <tr>
               <th>Language</th>
               <th>Level</th>
               <th>CEFR level</th>
             </tr>
-          </thead>
-          <tbody>
             {languageSkills.map((skill) => (
               <tr key={skill.language}>
                 <td>{skill.language}</td>

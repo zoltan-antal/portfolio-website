@@ -26,48 +26,30 @@ main.skills {
       padding-bottom: 4px;
     }
 
-    thead {
-      th {
-        font-size: 1.2rem;
-        background-color: var(--highlight-dark);
-        color: var(--highlight-dark-contrast);
-        padding: 5px 0;
-      }
-    }
-
     tbody {
       tr {
         height: 100%;
 
+        th {
+          padding: 5px 0;
+          font-size: 1.2rem;
+          background-color: var(--highlight-dark);
+          color: var(--highlight-dark-contrast);
+        }
+
         td {
           text-align: center;
 
-          &:not(:last-child) {
-            border-right: 1px solid var(--highlight-medium);
-          }
-        }
-
-        th {
-          background-color: var(--highlight-light);
-          color: var(--highlight-light-contrast);
-          padding: 5px 0;
-          font-weight: normal;
-        }
-      }
-
-      &.mobile {
-        tr {
-          th {
-            font-size: 1.2rem;
-            background-color: var(--highlight-dark);
-            color: var(--highlight-dark-contrast);
-            font-weight: bold;
+          &:not(:has(strong)) {
+            &:not(:last-child) {
+              border-right: 1px solid var(--highlight-medium);
+            }
           }
 
-          td:has(strong) {
+          &:has(strong) {
+            padding: 5px 0;
             background-color: var(--highlight-light);
             color: var(--highlight-light-contrast);
-            padding: 5px 0;
 
             strong {
               font-weight: normal;
