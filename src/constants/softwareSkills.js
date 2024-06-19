@@ -27,8 +27,9 @@ const softwareSkills = [
   { technology: 'bootstrap', category: 'frameworks', familiarity: 'low' },
   { technology: 'git', category: 'tools', familiarity: 'high' },
   { technology: 'github', category: 'tools', familiarity: 'high' },
-  { technology: 'postman', category: 'tools', familiarity: 'high' },
+  { technology: 'linux', category: 'tools', familiarity: 'high' },
   { technology: 'vscode', category: 'tools', familiarity: 'high' },
+  { technology: 'postman', category: 'tools', familiarity: 'high' },
   { technology: 'redux', category: 'tools', familiarity: 'high' },
   { technology: 'axios', category: 'tools', familiarity: 'high' },
   { technology: 'reactrouter', category: 'tools', familiarity: 'high' },
@@ -44,7 +45,6 @@ const softwareSkills = [
   { technology: 'vite', category: 'tools', familiarity: 'low' },
   { technology: 'eslint', category: 'tools', familiarity: 'low' },
   // { technology: 'tanstackquery', category: 'tools', familiarity: 'low' },
-  // { technology: 'linux', category: 'tools', familiarity: 'low' },
   // { technology: 'lodash', category: 'tools', familiarity: 'low' },
 ];
 
