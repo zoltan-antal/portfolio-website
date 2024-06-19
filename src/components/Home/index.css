@@ -3,19 +3,24 @@ main.home {
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  gap: 25px;
+  gap: 40px;
 
-  .greeting {
-    font-size: 2.5rem;
+  #greeting {
+    font-size: 3.1rem;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 2.5rem;
+    }
   }
 
   .animated-word-display {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
-  .introduction {
+  #introduction {
+    margin-top: 20px;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1.25rem;
 
     @media only screen and (max-width: 768px) {
       font-size: 1.05rem;

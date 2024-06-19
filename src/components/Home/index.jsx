@@ -5,11 +5,11 @@ import AnimatedWordDisplay from './AnimatedWordDisplay';
 const Home = () => {
   return (
     <main className="home">
-      <h1 className="greeting">Hi, I&apos;m Zoltán.</h1>
+      <h1 id="greeting">Hi, I&apos;m Zoltán.</h1>
       <AnimatedWordDisplay
         words={['Software developer', 'Problem solver', 'Engineer']}
       />
-      <p className="introduction">
+      <p id="introduction">
         I&apos;m a software developer specialising in full-stack web
         development, based in Berkshire, UK.
       </p>
