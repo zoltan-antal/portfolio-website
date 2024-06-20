@@ -15,6 +15,8 @@ const About = () => {
     const cvDownloadLink = document.createElement('a');
     // cvDownloadLink.href = cv;
     cvDownloadLink.href = cvUrl;
+    cvDownloadLink.target = '_blank';
+    cvDownloadLink.rel = 'noopener noreferrer';
     // cvDownloadLink.setAttribute('download', 'Zoltan_Antal-CV.pdf');
     cvDownloadLink.click();
   };
