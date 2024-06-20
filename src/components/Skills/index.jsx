@@ -60,10 +60,10 @@ const Skills = () => {
                     <strong>Languages</strong>
                   </td>
                   <td>
-                    <strong>Frameworks</strong>
+                    <strong>Frameworks & Libraries</strong>
                   </td>
                   <td>
-                    <strong>Dev tools & Libraries</strong>
+                    <strong>Dev tools</strong>
                   </td>
                 </tr>
                 <tr>
@@ -79,10 +79,10 @@ const Skills = () => {
                     <strong>Languages</strong>
                   </td>
                   <td>
-                    <strong>Frameworks</strong>
+                    <strong>Frameworks & Libraries</strong>
                   </td>
                   <td>
-                    <strong>Dev tools & Libraries</strong>
+                    <strong>Dev tools</strong>
                   </td>
                 </tr>
                 <tr>
