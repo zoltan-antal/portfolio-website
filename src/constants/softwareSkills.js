@@ -24,6 +24,7 @@ const softwareSkills = [
   { technology: 'apollo', category: 'frameworks', familiarity: 'low' },
   { technology: 'reactrouter', category: 'frameworks', familiarity: 'low' },
   { technology: 'passportjs', category: 'frameworks', familiarity: 'low' },
+  { technology: 'reactnative', category: 'frameworks', familiarity: 'low' },
   { technology: 'materialui', category: 'frameworks', familiarity: 'low' },
   { technology: 'bootstrap', category: 'frameworks', familiarity: 'low' },
   { technology: 'git', category: 'tools', familiarity: 'high' },

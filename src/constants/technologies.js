@@ -38,6 +38,7 @@ import postmanIcon from '../assets/images/icons/technologies/postman.svg';
 import pythonIcon from '../assets/images/icons/technologies/python.svg';
 import racketIcon from '../assets/images/icons/technologies/racket.svg';
 import reactIcon from '../assets/images/icons/technologies/react.svg';
+import reactnativeIcon from '../assets/images/icons/technologies/reactnative.svg';
 import reactrouterIcon from '../assets/images/icons/technologies/reactrouter.svg';
 import reactrouterIconDark from '../assets/images/icons/technologies/reactrouter-dark.svg';
 import reduxIcon from '../assets/images/icons/technologies/redux.svg';
@@ -226,6 +227,11 @@ const technologies = {
   react: {
     name: 'React',
     icon: reactIcon,
+    iconDark: false,
+  },
+  reactnative: {
+    name: 'React Native',
+    icon: reactnativeIcon,
     iconDark: false,
   },
   reactrouter: {
