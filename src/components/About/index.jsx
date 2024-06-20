@@ -1,7 +1,8 @@
 import './index.css';
 import { Link } from 'react-router-dom';
 import profilePicture from '../../assets/images/photos/profile-picture.jpg';
-import cv from '../../assets/files/Zoltan_Antal-CV.pdf';
+// import cv from '../../assets/files/Zoltan_Antal-CV.pdf';
+import cvUrl from '../../constants/cvUrl';
 import aboutMe from '../../constants/aboutMe';
 
 const About = () => {
@@ -12,8 +13,9 @@ const About = () => {
 
   const downloadCV = () => {
     const cvDownloadLink = document.createElement('a');
-    cvDownloadLink.href = cv;
-    cvDownloadLink.setAttribute('download', 'Zoltan_Antal-CV.pdf');
+    // cvDownloadLink.href = cv;
+    cvDownloadLink.href = cvUrl;
+    // cvDownloadLink.setAttribute('download', 'Zoltan_Antal-CV.pdf');
     cvDownloadLink.click();
   };
 
