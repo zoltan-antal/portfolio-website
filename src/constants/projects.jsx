@@ -46,13 +46,13 @@ const projects = [
     description: (
       <>
         <p>
-          An open-source web app that simplifies the process of crafting and
-          managing professional CVs. It features an intuitive editor where users
-          can input their information to generate their CV in real-time. There
-          are options for duplicating or creating multiple CVs, allowing users
-          to tailor their CVs for various job applications. The app also
-          supports user accounts for accessing work from any device, making it a
-          convenient tool for jobseekers.
+          An open-source full-stack web app that simplifies the process of
+          crafting and managing professional CVs. It features an intuitive
+          editor where users can input their information to generate their CV in
+          real-time. There are options for duplicating or creating multiple CVs,
+          allowing users to tailor their CVs for various job applications. The
+          app also supports user accounts for accessing work from any device,
+          making it a convenient tool for jobseekers.
         </p>
       </>
     ),
@@ -64,16 +64,16 @@ const projects = [
     darkMode: false,
     colourblindFriendly: false,
     technologies: [
+      'javascript',
+      'mongodb',
       'nodejs',
       'express',
-      'mongodb',
-      'javascript',
       'react',
       'mongoose',
-      'passportjs',
-      'jwt',
       'redux',
       'axios',
+      'passportjs',
+      'jwt',
     ],
   },
   {
@@ -83,8 +83,8 @@ const projects = [
     description: (
       <>
         <p>
-          An upcoming open-source web app designed to be a solution for
-          household consumable inventory management. From groceries to
+          An upcoming open-source full-stack web app designed to be a solution
+          for household consumable inventory management. From groceries to
           toiletries, this app aims to streamline inventory tracking and
           shopping trips. Features include barcode scanning for inventory
           updates, expiry date tracking, predictive shopping list generation
@@ -103,16 +103,16 @@ const projects = [
     darkMode: true,
     colourblindFriendly: false,
     technologies: [
+      'typescript',
+      'postgresql',
       'nodejs',
       'express',
-      'postgresql',
-      'typescript',
       'react',
-      'passportjs',
-      'jwt',
+      'sequelize',
       'redux',
       'axios',
       'reactrouter',
+      'passportjs',
     ],
   },
   {
