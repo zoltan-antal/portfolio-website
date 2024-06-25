@@ -43,6 +43,7 @@ import reactrouterIcon from '../assets/images/icons/technologies/reactrouter.svg
 import reactrouterIconDark from '../assets/images/icons/technologies/reactrouter-dark.svg';
 import reduxIcon from '../assets/images/icons/technologies/redux.svg';
 import rubyIcon from '../assets/images/icons/technologies/ruby.svg';
+import sequelizeIcon from '../assets/images/icons/technologies/sequelize.svg';
 import sqlIcon from '../assets/images/icons/technologies/sql.png';
 import tanstackqueryIcon from '../assets/images/icons/technologies/tanstackquery.png';
 import typescriptIcon from '../assets/images/icons/technologies/typescript.svg';
@@ -247,6 +248,11 @@ const technologies = {
   ruby: {
     name: 'Ruby',
     icon: rubyIcon,
+    iconDark: false,
+  },
+  sequelize: {
+    name: 'Sequelize',
+    icon: sequelizeIcon,
     iconDark: false,
   },
   sql: {

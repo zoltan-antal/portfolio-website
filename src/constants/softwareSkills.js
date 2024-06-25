@@ -20,6 +20,7 @@ const softwareSkills = [
   { technology: 'mongodb', category: 'frameworks', familiarity: 'high' },
   { technology: 'mongoose', category: 'frameworks', familiarity: 'high' },
   { technology: 'postgresql', category: 'frameworks', familiarity: 'high' },
+  { technology: 'sequelize', category: 'frameworks', familiarity: 'high' },
   { technology: 'graphql', category: 'frameworks', familiarity: 'low' },
   { technology: 'apollo', category: 'frameworks', familiarity: 'low' },
   { technology: 'reactrouter', category: 'frameworks', familiarity: 'low' },
